@@ -60,3 +60,25 @@ footer {
     background: #333;
     color: #fff;
 }
+
+
+.course-card {
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    border: 1px solid var(--card-border, #ddd);
+}
+
+.course-card.completed {
+    background-color: var(--card-completed-bg, #c8e6c9);
+    border-color: var(--card-completed-border, #9ccc65);
+}
+
+.course-card.incomplete {
+    background-color: var(--card-incomplete-bg, #ffcdd2);
+    border-color: var(--card-incomplete-border, #e57373);
+}
+
+.filters button.active {
+    outline: 2px solid var(--accent, #333);
+}

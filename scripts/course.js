@@ -79,34 +79,80 @@ const courses = [
 ]
 
 
-const courseList = document.getElementById('course-list');
-const totalCredits = document.getElementById('total-credits');
 
-function displayApprovedCourses() {
-    courseList.innerHTML = '';
-    const approvedCourses = courses.filter(course => course.completed === true);
+const courseListEl = document.getElementById('course-list');
+const totalCreditsEl = document.getElementById('total-credits');
+const filterButtons = document.querySelectorAll('.filters button');
 
-    let credits = 0;
+/**
+ * Renderiza tarjetas de cursos con diferenciación visual.
+ * @param {'all'|'WDD'|'CSE'} filter
+ */
+function renderCourses(filter = 'all') {
+  if (!courseListEl || !totalCreditsEl) return;
 
-    approvedCourses.forEach(course => {
-        credits += course.credits;
+  // Filtrado por subject
+  let filtered = courses;
+  if (filter !== 'all') {
+    filtered = courses.filter((c) => c.subject === filter);
+  }
 
-        const card = document.createElement('div');
-        card.classList.add('course-card');
-        card.style.background = '#c8e6c9'; // Verde para aprobados
+  // Limpieza del contenedor
+  courseListEl.innerHTML = '';
 
-        card.innerHTML = `
-            <h3>${course.subject} ${course.number} - ${course.title}</h3>
-            <p><strong>Credits:</strong> ${course.credits}</p>
-            <p><strong>Description:</strong> ${course.description}</p>
-            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+  // Suma de créditos y creación de tarjetas
+  let credits = 0;
+  filtered.forEach((course) => {
+    credits += course.credits;
+
+    // tarjeta
+    const card = document.createElement('article');
+    card.className = `course-card ${course.completed ? 'completed' : 'incomplete'}`;
+    card.setAttribute(
+      'aria-label',
+      `${course.subject} ${course.number} - ${course.title} (${course.completed ? 'completed' : 'incomplete'})`
+    );
+
+    // Contenido de la tarjeta
+    card.innerHTML = `
+      <h3 class="course-title">${course.subject} ${course.number} — ${course.title}</h3>
         `;
+    courseListEl.appendChild(card);
+  });
 
-        courseList.appendChild(card);
-    });
-
-    totalCredits.textContent = `The total credits for approved courses is ${credits}`;
+  // Total de créditos del conjunto mostrado
+  totalCreditsEl.textContent = `The total credits for course listed above is ${credits}`;
 }
 
-// Mostrar solo cursos aprobados al cargar la página
-displayApprovedCourses();
+/* ---------- 4) Wayfinding: estado activo de botones ---------- */
+function updateActiveButton(target) {
+  filterButtons.forEach((btn) => {
+    const isActive = btn === target;
+    btn.classList.toggle('active', isActive);
+    btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+  });
+}
+
+/* ---------- 5) Inicialización ---------- */
+(function initCoursesUI() {
+  // Normaliza la propiedad "complete" → "completed" si viene así
+  normalizeCompletionProperty(courses);
+
+  // Aplica tu progreso (marca completed=true donde corresponda)
+  applyUserCompletions(courses);
+
+  // Listeners de filtro
+  filterButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const filter = btn.dataset.filter || 'all';
+      updateActiveButton(btn);
+      renderCourses(filter);
+    });
+  });
+
+  // Estado inicial: Todos
+  const defaultBtn = document.querySelector('.filters button[data-filter="all"]');
+  if (defaultBtn) updateActiveButton(defaultBtn);
+
+  renderCourses('all');
+})();
