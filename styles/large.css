@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+    nav {
+        display: flex !important;
+        flex-direction: row;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+    }
+
+    .courses {
+        grid-column: span 2;
+    }
+}

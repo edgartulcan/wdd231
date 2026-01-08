@@ -1,0 +1,62 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: none;
+    flex-direction: column;
+    background: #444;
+}
+
+nav a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #555;
+}
+
+#menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+main {
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.filters button {
+    margin: 5px;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
