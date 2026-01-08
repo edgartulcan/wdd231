@@ -77,3 +77,36 @@ const courses = [
         completed: false
     }
 ]
+
+
+const courseList = document.getElementById('course-list');
+const totalCredits = document.getElementById('total-credits');
+
+function displayApprovedCourses() {
+    courseList.innerHTML = '';
+    const approvedCourses = courses.filter(course => course.completed === true);
+
+    let credits = 0;
+
+    approvedCourses.forEach(course => {
+        credits += course.credits;
+
+        const card = document.createElement('div');
+        card.classList.add('course-card');
+        card.style.background = '#c8e6c9'; // Verde para aprobados
+
+        card.innerHTML = `
+            <h3>${course.subject} ${course.number} - ${course.title}</h3>
+            <p><strong>Credits:</strong> ${course.credits}</p>
+            <p><strong>Description:</strong> ${course.description}</p>
+            <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+        `;
+
+        courseList.appendChild(card);
+    });
+
+    totalCredits.textContent = `The total credits for approved courses is ${credits}`;
+}
+
+// Mostrar solo cursos aprobados al cargar la página
+displayApprovedCourses();
