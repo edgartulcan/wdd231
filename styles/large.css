@@ -2,6 +2,7 @@
     nav {
         display: flex !important;
         flex-direction: row;
+        gap: 20px;
     }
 
     #menu-toggle {
@@ -14,7 +15,32 @@
         gap: 20px;
     }
 
+    .about {
+        grid-column: 1;
+    }
+
+    .photo {
+        grid-column: 2;
+    }
+
     .courses {
         grid-column: span 2;
+    }
+
+    .filters {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #course-list {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .course-card {
+        width: 30%;
+        text-align: center;
     }
 }

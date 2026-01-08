@@ -1,32 +1,34 @@
-body {
-    font-family: 'Roboto', sans-serif;
+/* Reset básico */
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
 header {
+    background-color: #000;
+    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
-    color: #fff;
     padding: 10px;
 }
 
-nav {
-    display: none;
-    flex-direction: column;
-    background: #444;
+header img {
+    width: 40px;
+    height: 40px;
 }
 
-nav a {
-    color: #fff;
-    padding: 10px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    background: #555;
+.site-name {
+    font-size: 1.2rem;
+    margin-left: 10px;
 }
 
 #menu-toggle {
@@ -34,31 +36,117 @@ nav a:hover {
     background: none;
     border: none;
     color: #fff;
+    cursor: pointer;
 }
 
-main {
+nav {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
     padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #666;
+}
+
+/* Main */
+main {
+    padding: 15px;
+}
+
+h1 {
+    margin-bottom: 15px;
 }
 
 section {
     margin-bottom: 20px;
 }
 
+section h2 {
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.about,
+.photo,
+.courses {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
 .photo img {
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+/* Botones de filtro */
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
 }
 
 .filters button {
-    margin: 5px;
     padding: 10px;
+    border: 1px solid #999;
+    background-color: #ccc;
+    cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
+.filters button:hover,
+.filters button.active {
+    background-color: #999;
     color: #fff;
+}
+
+/* Tarjetas de curso */
+.course-card {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #999;
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.course-card.completed {
+    background-color: #c8e6c9;
+    /* verde suave */
+}
+
+.course-card.incomplete {
+    background-color: #ffcdd2;
+    /* rojo suave */
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+footer .social a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+footer p {
+    margin-top: 10px;
+    font-size: 0.9rem;
 }
 
 
