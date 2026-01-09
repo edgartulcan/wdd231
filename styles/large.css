@@ -1,4 +1,3 @@
-/* IMPORTANTE: no redefinir .course-card, .course-card.completed, .course-card.incomplete a nivel superior */
 @media (min-width: 768px) {
     nav {
         display: flex !important;
@@ -33,7 +32,7 @@
         justify-content: center;
     }
 
-    /* Distribución horizontal de cards sin redefinir estilos base */
+    
     #course-list {
         display: flex;
         justify-content: space-around;
@@ -44,6 +43,5 @@
     .course-card {
         width: 30%;
         text-align: center;
-        /* SOLO cambia la alineación en desktop */
     }
 }

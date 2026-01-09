@@ -1,6 +1,4 @@
-/* ====== Base ====== */
 :root {
-    /* Paleta y tokens reutilizables */
     --card-border: #999;
     --card-bg: #ccc;
 
@@ -16,7 +14,6 @@
     --section-header-fg: #fff;
 }
 
-/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -59,7 +56,6 @@ header img {
 
 nav {
     display: none;
-    /* se mostrará en desktop via @media */
     flex-direction: column;
     background-color: #333;
 }
@@ -110,7 +106,7 @@ section h2 {
     margin: auto;
 }
 
-/* Filtros */
+
 .filters {
     display: flex;
     flex-direction: column;
@@ -131,7 +127,7 @@ section h2 {
     color: #fff;
 }
 
-/* ====== Course cards (CONSOLIDADO) ====== */
+
 .course-card {
     padding: 10px;
     margin: 5px 0;
@@ -142,7 +138,7 @@ section h2 {
     /* base */
 }
 
-/* Estados: se definen UNA sola vez */
+
 .course-card.completed {
     background-color: var(--card-completed-bg);
     border-color: var(--card-completed-border);
