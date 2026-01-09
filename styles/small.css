@@ -1,3 +1,22 @@
+/* ====== Base ====== */
+:root {
+    /* Paleta y tokens reutilizables */
+    --card-border: #999;
+    --card-bg: #ccc;
+
+    --card-completed-bg: #c8e6c9;
+    /* verde suave */
+    --card-completed-border: #9ccc65;
+
+    --card-incomplete-bg: #ffcdd2;
+    /* rojo suave */
+    --card-incomplete-border: #e57373;
+
+    --section-header-bg: #000;
+    --section-header-fg: #fff;
+}
+
+/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -40,6 +59,7 @@ header img {
 
 nav {
     display: none;
+    /* se mostrará en desktop via @media */
     flex-direction: column;
     background-color: #333;
 }
@@ -70,8 +90,8 @@ section {
 }
 
 section h2 {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--section-header-bg);
+    color: var(--section-header-fg);
     padding: 8px;
     font-size: 1rem;
 }
@@ -90,7 +110,7 @@ section h2 {
     margin: auto;
 }
 
-/* Botones de filtro */
+/* Filtros */
 .filters {
     display: flex;
     flex-direction: column;
@@ -111,23 +131,26 @@ section h2 {
     color: #fff;
 }
 
-/* Tarjetas de curso */
+/* ====== Course cards (CONSOLIDADO) ====== */
 .course-card {
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid #999;
-    background-color: #ccc;
     border-radius: 4px;
+    border: 1px solid var(--card-border);
+    background-color: var(--card-bg);
+    text-align: left;
+    /* base */
 }
 
+/* Estados: se definen UNA sola vez */
 .course-card.completed {
-    background-color: #c8e6c9;
-    /* verde suave */
+    background-color: var(--card-completed-bg);
+    border-color: var(--card-completed-border);
 }
 
 .course-card.incomplete {
-    background-color: #ffcdd2;
-    /* rojo suave */
+    background-color: var(--card-incomplete-bg);
+    border-color: var(--card-incomplete-border);
 }
 
 /* Footer */
@@ -147,28 +170,3 @@ footer p {
     margin-top: 10px;
     font-size: 0.9rem;
 }
-
-
-
-.course-card {
-    padding: 12px;
-    margin: 6px 0;
-    border-radius: 8px;
-    border: 1px #ddd;
-}
-
-.course-card.completed {
-    background-color: #c8e6c9;
-    border-color: #9ccc65;
-}
-
-.course-card.incomplete {
-    background-color: #ffcdd2;
-    border-color:  #e57373;
-}
-
-.filters button.active {
-    outline: 2px #333;
-}
-
-
