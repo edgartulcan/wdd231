@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+    .site-header {
+        grid-template-columns: auto 1fr;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .site-nav {
+        display: block;
+    }
+
+    .nav__list {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: var(--space-4);
+        margin: 0;
+    }
+}
