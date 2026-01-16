@@ -1,0 +1,73 @@
+
+[
+  {
+    "name": "Panadería El Trigal",
+    "tagline": "Pan artesanal desde 1985",
+    "address": "Av. Central 123, Ciudad",
+    "phone": "+593 2-222-3344",
+    "email": "contacto@eltrigal.com",
+    "website": "https://eltrigal.example.com",
+    "image": "trigal.jpg",
+    "membership_level": 3
+  },
+  {
+    "name": "Andes Tech Solutions",
+    "tagline": "Transformación digital para PYMES",
+    "address": "Calle Innovación 45, Parque Tecnológico",
+    "phone": "+593 2-555-1234",
+    "email": "hello@andestech.com",
+    "website": "https://andestech.example.com",
+    "image": "andes-tech.jpg",
+    "membership_level": 2
+  },
+  {
+    "name": "EcoVerde Jardinería",
+    "tagline": "Diseño y mantenimiento de áreas verdes",
+    "address": "C. Los Cipreses 67, Sector Norte",
+    "phone": "+593 98-765-4321",
+    "email": "ventas@ecoverde.com",
+    "website": "https://ecoverde.example.com",
+    "image": "ecoverde.jpg",
+    "membership_level": 1
+  },
+  {
+    "name": "Café Oriente",
+    "tagline": "Café de altura y repostería",
+    "address": "Plaza Mayor 10, Centro",
+    "phone": "+593 2-333-7788",
+    "email": "hola@cafeoriente.com",
+    "website": "https://cafeoriente.example.com",
+    "image": "cafe-oriente.jpg",
+    "membership_level": 2
+  },
+  {
+    "name": "Andina Salud",
+    "tagline": "Clínica y laboratorio",
+    "address": "Av. Salud 900, Torre Médica",
+    "phone": "+593 2-400-5566",
+    "email": "citas@andinasalud.com",
+    "website": "https://andinasalud.example.com",
+    "image": "andina-salud.jpg",
+    "membership_level": 3
+  },
+  {
+    "name": "Hotel Lago Azul",
+    "tagline": "Hospedaje y eventos",
+    "address": "Malecón 45, Costanera",
+    "phone": "+593 2-123-0099",
+    "email": "reservas@lagohotel.com",
+    "website": "https://lagohotel.example.com",
+    "image": "hotel-lago.jpg",
+    "membership_level": 1
+  },
+  {
+    "name": "Taller San José",
+    "tagline": "Mecánica automotriz integral",
+    "address": "Av. del Taller 250, Sur",
+    "phone": "+593 2-990-1122",
+    "email": "servicio@tsanjose.com",
+    "website": "https://tsanjose.example.com",
+    "image": "taller-san-jose.jpg",
+    "membership_level": 2
+  }
+]
