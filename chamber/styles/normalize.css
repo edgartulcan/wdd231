@@ -1,8 +1,5 @@
 html {
     line-height: 1.15;
-    /* 1 */
-    -webkit-text-size-adjust: 100%;
-    /* 2 */
 }
 
 body {
@@ -36,7 +33,7 @@ code,
 kbd,
 samp,
 pre {
-    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    font-family: Arial, sans-serif;
     font-size: 1em;
 }
 
