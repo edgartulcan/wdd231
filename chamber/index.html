@@ -54,22 +54,53 @@
         </nav>
     </header>
 
-    <main id="main-content" class="main">
-        <h1 class="page-title">Directorio de Miembros</h1>
-
-        <!-- Controles para alternar Grid/List -->
-        <section class="view-switcher" aria-label="Cambiar vista">
-            <button id="gridBtn" class="switcher-btn" aria-pressed="true" title="Vista de cuadrícula">
-                <img src="images/icon-grid.png" alt="" width="20" height="20"> Cuadrícula
-            </button>
-            <button id="listBtn" class="switcher-btn" aria-pressed="false" title="Vista de lista">
-                <img src="images/icon-list.png" alt="" width="20" height="20"> Lista
-            </button>
-        </section>
-
-
-        <section id="members" class="members members--grid" aria-live="polite" aria-busy="true">
-
+    <main>
+        <div class="hero">
+            <img src="images/afcanyon.webp" alt="af-canyon" class="hero-image" width="1200" height="630">
+            <button class="hero-btn">Join Us!</button>
+        </div>
+        <h1>Home</h1>
+        <article>
+            <div class="events">
+                <h2>Events</h2>
+                <h3>Date</h3>
+                <h3>Title</h3>
+                <h3>Location</h3>
+    
+                <p>February 10, 2026</p>
+                <p>Women in Business Conference</p>
+                <p>Pleasant Grove Library</p>
+    
+                <p>March 5, 2026</p>
+                <p>Annual Chamber Luncheon</p>
+                <p>Hyatt House Pleasant Grove</p>
+    
+                <p>April 8, 2026</p>
+                <p>Strawberry Days Planning Meeting</p>
+                <p>Chamber Office</p>
+            </div>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                </figure>
+                <p id="current-temp"></p>
+                <p id="description"></p>
+                <p>High: <span id="high-temp"></span></p>
+                <p>Low: <span id="low-temp"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Sunrise: <span id="sunrise"></span></p>
+                <p>Sunset: <span id="sunset"></span></p>
+            </div>
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <p>Today: <span id="dayZero"></span></p>
+                <p id="dayOne"></p>
+                <p id="dayTwo"></p>
+            </div>
+        </article>
+        <section class="spotlight">
+    
         </section>
     </main>
 
