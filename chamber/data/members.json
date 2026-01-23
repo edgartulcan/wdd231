@@ -6,7 +6,7 @@
             "address": "Urdernor 25 y Ayacucho",
             "phoneNumber": "2 485820",
             "websiteUrl": "https://www.sweetandcoffee.com.ec/",
-            "imageFile": "",
+            "imageFile": "images/sweet.png",
             "membLevel": 2
         },
         {
@@ -24,7 +24,7 @@
             "address": "Roque Saenz Peña 4984, Parque Industrial Paraná, Entre Ríos, Argentina.",
             "phoneNumber": "0800 888 3746",
             "websiteUrl": "https://frioteka.com.ar/",
-            "imageFile": "images/the-grid.webp",
+            "imageFile": "images/frioteka.png",
             "membLevel": 2
         },
         {
@@ -33,7 +33,7 @@
             "address": "CC Paseo San Francisco, pasillo Citroen",
             "phoneNumber": "+593 98 054 3814",
             "websiteUrl": "https://armables3d.com/",
-            "imageFile": "images/purple-turtle.webp",
+            "imageFile": "images/armables.webp",
             "membLevel": 1
         },
         {
