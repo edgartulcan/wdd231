@@ -1,73 +1,67 @@
-
-[
-  {
-    "name": "Panadería El Trigal",
-    "tagline": "Pan artesanal desde 1985",
-    "address": "Av. Central 123, Ciudad",
-    "phone": "+593 2-222-3344",
-    "email": "contacto@eltrigal.com",
-    "website": "https://eltrigal.example.com",
-    "image": "trigal.jpg",
-    "membership_level": 3
-  },
-  {
-    "name": "Andes Tech Solutions",
-    "tagline": "Transformación digital para PYMES",
-    "address": "Calle Innovación 45, Parque Tecnológico",
-    "phone": "+593 2-555-1234",
-    "email": "hello@andestech.com",
-    "website": "https://andestech.example.com",
-    "image": "andes-tech.jpg",
-    "membership_level": 2
-  },
-  {
-    "name": "EcoVerde Jardinería",
-    "tagline": "Diseño y mantenimiento de áreas verdes",
-    "address": "C. Los Cipreses 67, Sector Norte",
-    "phone": "+593 98-765-4321",
-    "email": "ventas@ecoverde.com",
-    "website": "https://ecoverde.example.com",
-    "image": "ecoverde.jpg",
-    "membership_level": 1
-  },
-  {
-    "name": "Café Oriente",
-    "tagline": "Café de altura y repostería",
-    "address": "Plaza Mayor 10, Centro",
-    "phone": "+593 2-333-7788",
-    "email": "hola@cafeoriente.com",
-    "website": "https://cafeoriente.example.com",
-    "image": "cafe-oriente.jpg",
-    "membership_level": 2
-  },
-  {
-    "name": "Andina Salud",
-    "tagline": "Clínica y laboratorio",
-    "address": "Av. Salud 900, Torre Médica",
-    "phone": "+593 2-400-5566",
-    "email": "citas@andinasalud.com",
-    "website": "https://andinasalud.example.com",
-    "image": "andina-salud.jpg",
-    "membership_level": 3
-  },
-  {
-    "name": "Hotel Lago Azul",
-    "tagline": "Hospedaje y eventos",
-    "address": "Malecón 45, Costanera",
-    "phone": "+593 2-123-0099",
-    "email": "reservas@lagohotel.com",
-    "website": "https://lagohotel.example.com",
-    "image": "hotel-lago.jpg",
-    "membership_level": 1
-  },
-  {
-    "name": "Taller San José",
-    "tagline": "Mecánica automotriz integral",
-    "address": "Av. del Taller 250, Sur",
-    "phone": "+593 2-990-1122",
-    "email": "servicio@tsanjose.com",
-    "website": "https://tsanjose.example.com",
-    "image": "taller-san-jose.jpg",
-    "membership_level": 2
-  }
-]
+{
+    "members": [
+        {
+            "name": "Taco Amigo",
+            "tagLine": "Burritos & Burgers & So Much More!",
+            "address": "239 E State Rd, Pleasant Grove, UT 84062",
+            "phoneNumber": "801-785-4718",
+            "websiteUrl": "https://tacoamigo.com/",
+            "imageFile": "images/taco-amigo.webp",
+            "membLevel": 2
+        },
+        {
+            "name": "Doterra",
+            "tagLine": "Empowering Wellness Worldwide",
+            "address": "389 S 1300 W, Pleasant Grove, UT 84062",
+            "phoneNumber": "800-411-8151",
+            "websiteUrl": "https://www.doterra.com/US/en",
+            "imageFile": "images/doterra.webp",
+            "membLevel": 3
+        },
+        {
+            "name": "The Grid",
+            "tagLine": "The Future of Entertainment",
+            "address": "593 S Evermore Ln, Pleasant Grove, UT 84062",
+            "phoneNumber": "801-882-2981",
+            "websiteUrl": "https://thegrid.com/",
+            "imageFile": "images/the-grid.webp",
+            "membLevel": 2
+        },
+        {
+            "name": "The Purple Turtle",
+            "tagLine": "Old Fashioned Flavor",
+            "address": "85 E State Rd, Pleasant Grove, UT 84062",
+            "phoneNumber": "801-785-2444",
+            "websiteUrl": "https://purpleturtlediner.com/",
+            "imageFile": "images/purple-turtle.webp",
+            "membLevel": 1
+        },
+        {
+            "name": "The Fellas Barber Shop",
+            "tagLine": "Giving Back is Built into Every Transaction",
+            "address": "1809 W State St, A2 Pleasant Grove, Utah 84062",
+            "phoneNumber": "801-919-9818",
+            "websiteUrl": "https://thefellas.com/",
+            "imageFile": "images/the-fellas.webp",
+            "membLevel": 1
+        },
+        {
+            "name": "The Ruth and Nathan Hale Theater",
+            "tagLine": "World Class Art, Local Talent",
+            "address": "401 South PG Blvd., Pleasant Grove, Utah 84062",
+            "phoneNumber": "801-226-8600",
+            "websiteUrl": "https://www.theruth.org/",
+            "imageFile": "images/the-ruth.webp",
+            "membLevel": 2
+        },
+        {
+            "name": "Asea",
+            "tagLine": "Power Your Potential",
+            "address": "1488 W Pleasant View Dr, Pleasant Grove, UT 84062",
+            "phoneNumber": "801-973-7499",
+            "websiteUrl": "https://www.aseaglobal.com/en-US/about",
+            "imageFile": "images/asea.webp",
+            "membLevel": 3
+        }
+    ]
+}
