@@ -393,3 +393,9 @@ html,
 body {
     overflow-x: hidden;
 }
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
