@@ -37,29 +37,29 @@
             "membLevel": 1
         },
         {
-            "name": "The Fellas Barber Shop",
-            "tagLine": "Giving Back is Built into Every Transaction",
-            "address": "1809 W State St, A2 Pleasant Grove, Utah 84062",
-            "phoneNumber": "801-919-9818",
-            "websiteUrl": "https://thefellas.com/",
+            "name": "Gourmandises",
+            "tagLine": "Pasteleria francesa",
+            "address": "Centro Comercial Riocentro El Dorado Km 10,5 Vía a la Aurora",
+            "phoneNumber": "093 996 6524",
+            "websiteUrl": "https://gourmandises.ec/",
             "imageFile": "images/the-fellas.webp",
             "membLevel": 1
         },
         {
-            "name": "The Ruth and Nathan Hale Theater",
-            "tagLine": "World Class Art, Local Talent",
-            "address": "401 South PG Blvd., Pleasant Grove, Utah 84062",
-            "phoneNumber": "801-226-8600",
-            "websiteUrl": "https://www.theruth.org/",
+            "name": "Holcim Ecuador",
+            "tagLine": "Venta de equipo de construccion y maquinaria",
+            "address": "Via Salinas entre Puerto Azul y Callabo",
+            "phoneNumber": "0995265752",
+            "websiteUrl": "https://www.holcim.com.ec/",
             "imageFile": "images/the-ruth.webp",
             "membLevel": 2
         },
         {
-            "name": "Asea",
-            "tagLine": "Power Your Potential",
-            "address": "1488 W Pleasant View Dr, Pleasant Grove, UT 84062",
-            "phoneNumber": "801-973-7499",
-            "websiteUrl": "https://www.aseaglobal.com/en-US/about",
+            "name": "Omarsa",
+            "tagLine": "Exportadora de Camaron",
+            "address": "Daule y General Contreras",
+            "phoneNumber": "+593 4 371 3035",
+            "websiteUrl": "https://www.omarsa.com.ec/?lang=es",
             "imageFile": "images/asea.webp",
             "membLevel": 3
         }
