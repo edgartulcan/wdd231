@@ -42,7 +42,7 @@
             "address": "Centro Comercial Riocentro El Dorado Km 10,5 Vía a la Aurora",
             "phoneNumber": "093 996 6524",
             "websiteUrl": "https://gourmandises.ec/",
-            "imageFile": "images/the-fellas.webp",
+            "imageFile": "images/gourmandises.png",
             "membLevel": 1
         },
         {
@@ -51,7 +51,7 @@
             "address": "Via Salinas entre Puerto Azul y Callabo",
             "phoneNumber": "0995265752",
             "websiteUrl": "https://www.holcim.com.ec/",
-            "imageFile": "images/the-ruth.webp",
+            "imageFile": "images/holcim.webp",
             "membLevel": 2
         },
         {
@@ -60,7 +60,7 @@
             "address": "Daule y General Contreras",
             "phoneNumber": "+593 4 371 3035",
             "websiteUrl": "https://www.omarsa.com.ec/?lang=es",
-            "imageFile": "images/asea.webp",
+            "imageFile": "images/omarsa.png",
             "membLevel": 3
         }
     ]
