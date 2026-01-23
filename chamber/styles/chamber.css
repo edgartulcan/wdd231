@@ -394,8 +394,25 @@ body {
     overflow-x: hidden;
 }
 
+/*Cambios para la pagina Chamber home*/
+
 .hero-image {
     width: 100%;
     height: auto;
     display: block;
 }
+
+.events,
+.current-weather,
+.forecast {
+    background-color: var(--background-color);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.events {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+}
+

@@ -17,4 +17,11 @@
         gap: var(--space-4);
         margin: 0;
     }
+
+    .article {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1rem;
+    }
+    
 }
