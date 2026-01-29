@@ -433,3 +433,26 @@ footer p {
     display: flex;
     margin: 0 auto;
 }
+
+.level button {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
+button {
+    padding: .5rem;
+    margin: 1rem;
+    background-color: rgb(230, 219, 219);
+    border-radius: 50px;
+}
+
+h3 {
+    display: block;
+    margin-block-start: 1.33em;
+    margin-block-end: 1.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
