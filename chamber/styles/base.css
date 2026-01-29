@@ -423,7 +423,7 @@ footer p {
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background: rgba(29, 116, 7, 0.473);
+    background: rgba(29, 116, 7,);
     border-radius: 10px;
     animation-duration: 1s;
     animation-name: slide-in;
