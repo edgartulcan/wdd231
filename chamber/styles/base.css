@@ -423,7 +423,7 @@ footer p {
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem;
-    background: rgba(29, 116, 7,);
+    background: rgba(51, 218, 10, 0.6);
     border-radius: 10px;
     animation-duration: 1s;
     animation-name: slide-in;
@@ -464,7 +464,6 @@ dialog {
     padding: 1rem;
     background-color: #fff;
     box-shadow: 0 0 3rem #777;
-    border-radius: 10px;
     width: 90%;
     max-width: 600px;
 }
