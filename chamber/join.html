@@ -15,7 +15,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/member.js" defer></script>
-    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
     
     
     <title>Timbuktu Chamber of Commerce</title>
@@ -43,13 +43,36 @@
         </ul>
     </nav>
     <main>
-        <h1>Member Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <div id="cards" class="grid"></div>
-
+        <h1>Join</h1>
+        
+        <form method="GET" action="thankyou.html" class="join-form">
+            <h2>Membership Application Form</h2>
+            <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                    title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Organization Title <input type="text" name="title" autocomplete="organization-title"
+                    title="Only letters, hyphens, and spaces with 7 characters minimum" pattern="^[A-Za-z -]{7,}$"></label>
+            <label>Email <input type="email" name="email" required placeholder="eltuki69@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes"
+                    placeholder="+593 9879 750 15"></label>
+            <label>Business or Organization Name <input type="text" name="organization-name" required
+                    autocomplete="organization" title="Your Organization Name"></label>
+        
+            <div class="memb-level">
+                <div>Membership Level</div>
+                <label><input type="radio" name="radio" value="np"> NP Membership (for non-profit organizations - No
+                    fee)</label>
+                <label><input type="radio" name="radio" value="bronze"> Bronze Membership ($150)</label>
+                <label><input type="radio" name="radio" value="silver"> Silver Membership ($250)</label>
+                <label><input type="radio" name="radio" value="gold"> Gold Membership ($350)</label>
+            </div>
+        
+            <label class="text-field"> Business or Organization Description <textarea name="description"></textarea></label>
+            <input type="hidden" name="timestamp" id="timestamp">
+        
+            <input type="submit" value="Become a Member">
+        </form>
     </main>
     <footer>
         <div class="contact">
