@@ -337,3 +337,78 @@ footer p {
     border-color: var(--secondary-color);
 }
 
+/* join form */
+.join-form {
+    margin-left: 1rem;
+}
+
+.join-form label {
+    display: block;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form input[type="textarea"] {
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    border: solid 1px #bdb6b6;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.memb-level {
+    margin: 20px 0;
+}
+
+.memb-level input[type="radio"] {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.memb-level label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.memb-level div {
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.join-form input[type="submit"] {
+    border: solid 1px #bdb6b6;
+    border-radius: 5px;
+    font-weight: 700;
+    width: 96%;
+    max-width: 400px;
+    padding: .8rem;
+    font-size: larger;
+    margin-bottom: 15px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.join-form textarea {
+    display: block;
+    height: 100px;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+    border: solid 1px #bdb6b6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* thank you page css */
+#form-results {
+    background-color: var(--background-color);
+    margin-bottom: 1rem;
+    padding: 10px;
+}
