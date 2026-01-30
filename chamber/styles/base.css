@@ -115,6 +115,7 @@ h1 {
     color: var(--text-color);
 }
 
+/* ====== Cards del directorio ====== */
 #cards a {
     color: var(--primary-color);
     font-weight: 700;
@@ -151,7 +152,7 @@ h1 {
     border: 1px solid var(--border-color);
     padding: 10px;
     background-color: #eee;
-    /* Si quieres, cámbialo por var(--surface-color) */
+    /* si prefieres: var(--surface-color) */
     min-height: auto;
 }
 
@@ -335,7 +336,7 @@ footer p {
     border-color: var(--secondary-color);
 }
 
-/* join form */
+/* ====== Formulario Join ====== */
 .join-form {
     margin-left: 1rem;
 }
@@ -404,151 +405,127 @@ footer p {
     margin-bottom: 20px;
 }
 
-/* thank you page css */
+/* ====== Thank you page ====== */
 #form-results {
     background-color: var(--background-color);
     margin-bottom: 1rem;
     padding: 10px;
 }
 
-/* ==== Tarjetas (Membership Levels) — estilo base existente ==== */
+/* ====== Tarjetas (Membership Levels) — estilo base ====== */
 .card {
     display: grid;
     width: 100%;
-    max-width: 700px;
+    /* REMOVIDO: max-width: 700px;  (rompía la grilla en columnas) */
     font-size: 23px;
     text-align: center;
-    margin: 1rem;
+    /* REMOVIDO: margin: 1rem;  (el gap del grid maneja el espacio) */
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     background: rgba(51, 218, 10, 0.6);
     border-radius: 10px;
-    /* Las siguientes propiedades de animación serán sobrescritas más abajo para una animación mejorada */
-    animation-duration: 1s;
-    animation-name: slide-in;
-    /* (legacy) */
 }
 
+/* ====== Layout móvil por defecto (CONSOLIDADO) ====== */
 .secondmain {
-    /* ORIGINAL: display: flex; margin: 0 auto; */
-    /* NUEVO: diseño móvil primero con grid */
     display: grid;
     grid-template-columns: 1fr;
     /* 1 columna en móvil */
     gap: 1.5rem;
     padding: 0 1rem;
     margin: 0 auto;
-    /* mantenemos el centrado en vistas grandes */
 }
 
-.level button {
-    width: 250px;
-    display: block;
-    margin: 0 auto;
-}
-
-button {
-    padding: .5rem;
-    margin: 1rem;
-    background-color: rgb(230, 219, 219);
-    border-radius: 50px;
-}
-
-h3 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-}
-
-/* ===== This is for the MODALS ===== */
-dialog {
-    border: 1px solid rgb(0 0 0 / 10%);
-    border-radius: .25rem;
-    padding: 1rem;
-    background-color: #fff;
-    box-shadow: 0 0 3rem #777;
-    width: 90%;
-    max-width: 600px;
-}
-
-::backdrop {
-    background-color: rgb(0 0 0 / 50%);
-}
-
-dialog button {
-    position: absolute;
-    top: 23px;
-    right: 23px;
-    padding: .5rem 1rem;
-    border: 1px solid rgba(21, 182, 0, 0.1);
-}
-
-/* Tarjetas: ocupar toda la celda y estructurar el contenido */
-.level .card {
-    /* Ocupa todo el ancho de la celda del grid */
-    width: 100%;
-    max-width: none;
-    /* <-- importante: elimina el tope de 700px */
-    margin: 0;
-    /* el espaciado lo maneja el grid (.level) */
-    text-align: left;
-    /* mejor lectura; puedes dejar center si prefieres */
-
-    /* Estructura interna para alinear contenidos y botón */
-    display: flex;
-    flex-direction: column;
-    gap: .75rem;
-    min-height: 100%;
-    /* que llene la altura disponible de la celda */
-    box-sizing: border-box;
-}
-
-/* Título dentro de la tarjeta */
-.level .card h3 {
-    margin: .25rem 0 .5rem 0;
-}
-
-/* Botón dentro de la tarjeta: ancho completo y consistente */
-.level .card .learn-more {
-    width: 100%;
-    max-width: none;
-    margin: 0;
-    /* fuera los márgenes centrados del botón global */
-    align-self: stretch;
-    /* se estira al ancho de la tarjeta */
-    box-sizing: border-box;
-    padding: .75rem 1rem;
-    border-radius: 8px;
-    /* menos “píldora”, más limpio dentro del card */
-}
-
-/* Si quieres mantener el estilo “píldora” global en otros botones, 
-   sobreescribimos SÓLO los de las tarjetas arriba y dejamos el global: */
-button {
-    padding: .5rem;
-    margin: 1rem;
-    background-color: rgb(230, 219, 219);
-    border-radius: 50px;
-}
-
-/* Grid de la sección en móvil (ya lo tienes, reitero lo clave) */
-.secondmain {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 0 1rem;
-    margin: 0 auto;
-}
-
-/* Grid de tarjetas en móvil: una por fila y con separación consistente */
+/* Grid de tarjetas en móvil (CONSOLIDADO) */
 .level {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    /* maneja separación; por eso quitamos margin en .card */
+    /* el spacing entre .card */
+}
+
+/* ====== Botón global (CONSOLIDADO) ====== */
+button {
+    padding: .5rem;
+    margin: 1rem;
+    background-color: rgb(230, 219, 219);
+    border-radius: 50px;
+}
+
+/* ====== Botón dentro de tarjetas ====== */
+.level .card .learn-more {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    /* spacing lo da el grid */
+    align-self: stretch;
+    box-sizing: border-box;
+    padding: .75rem 1rem;
+    border-radius: 8px;
+    /* más limpio dentro del card */
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+}
+
+.level .card .learn-more:hover {
+    background-color: var(--primary-dark);
+}
+
+/* ====== Tarjeta: ocupa su celda y orden interno sólido ====== */
+.level .card {
+    /* sobre-especificación para el layout de .level */
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    min-height: 100%;
+    box-sizing: border-box;
+}
+
+.level .card h3 {
+    margin: .25rem 0 .5rem 0;
+}
+
+/* ====== Animaciones y elevación ====== */
+@keyframes slide-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(16px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.card {
+    /* animación de entrada suave */
+    animation-name: slide-in-up;
+    animation-duration: 450ms;
+    animation-timing-function: cubic-bezier(.2, .7, .3, 1);
+    animation-fill-mode: both;
+
+    will-change: transform, box-shadow;
+    transition: transform 250ms ease, box-shadow 250ms ease, background-color 250ms ease;
+}
+
+.card:hover,
+.card:focus-within {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, .15);
+}
+
+/* Respeto a prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .card {
+        animation: none !important;
+        transition: none !important;
+    }
 }
