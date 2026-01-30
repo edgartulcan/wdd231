@@ -3,7 +3,6 @@
     box-sizing: border-box;
 }
 
-
 /* Base del documento */
 body {
     margin: 0;
@@ -19,7 +18,6 @@ header {
     padding: 5px 0 5px 10px;
     align-items: end;
     column-gap: 8px;
-
     background-color: var(--surface-color);
     border-bottom: 1px solid var(--border-color);
 }
@@ -413,6 +411,7 @@ footer p {
     padding: 10px;
 }
 
+/* ==== Tarjetas (Membership Levels) — estilo base existente ==== */
 .card {
     display: grid;
     width: 100%;
@@ -425,13 +424,22 @@ footer p {
     padding: 1rem;
     background: rgba(51, 218, 10, 0.6);
     border-radius: 10px;
+    /* Las siguientes propiedades de animación serán sobrescritas más abajo para una animación mejorada */
     animation-duration: 1s;
     animation-name: slide-in;
+    /* (legacy) */
 }
 
 .secondmain {
-    display: flex;
+    /* ORIGINAL: display: flex; margin: 0 auto; */
+    /* NUEVO: diseño móvil primero con grid */
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 columna en móvil */
+    gap: 1.5rem;
+    padding: 0 1rem;
     margin: 0 auto;
+    /* mantenemos el centrado en vistas grandes */
 }
 
 .level button {
@@ -457,7 +465,7 @@ h3 {
     unicode-bidi: isolate;
 }
 
-/*This is for the MODALS*/
+/* ===== This is for the MODALS ===== */
 dialog {
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: .25rem;
@@ -478,4 +486,69 @@ dialog button {
     right: 23px;
     padding: .5rem 1rem;
     border: 1px solid rgba(21, 182, 0, 0.1);
+}
+
+/* Tarjetas: ocupar toda la celda y estructurar el contenido */
+.level .card {
+    /* Ocupa todo el ancho de la celda del grid */
+    width: 100%;
+    max-width: none;
+    /* <-- importante: elimina el tope de 700px */
+    margin: 0;
+    /* el espaciado lo maneja el grid (.level) */
+    text-align: left;
+    /* mejor lectura; puedes dejar center si prefieres */
+
+    /* Estructura interna para alinear contenidos y botón */
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    min-height: 100%;
+    /* que llene la altura disponible de la celda */
+    box-sizing: border-box;
+}
+
+/* Título dentro de la tarjeta */
+.level .card h3 {
+    margin: .25rem 0 .5rem 0;
+}
+
+/* Botón dentro de la tarjeta: ancho completo y consistente */
+.level .card .learn-more {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    /* fuera los márgenes centrados del botón global */
+    align-self: stretch;
+    /* se estira al ancho de la tarjeta */
+    box-sizing: border-box;
+    padding: .75rem 1rem;
+    border-radius: 8px;
+    /* menos “píldora”, más limpio dentro del card */
+}
+
+/* Si quieres mantener el estilo “píldora” global en otros botones, 
+   sobreescribimos SÓLO los de las tarjetas arriba y dejamos el global: */
+button {
+    padding: .5rem;
+    margin: 1rem;
+    background-color: rgb(230, 219, 219);
+    border-radius: 50px;
+}
+
+/* Grid de la sección en móvil (ya lo tienes, reitero lo clave) */
+.secondmain {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+/* Grid de tarjetas en móvil: una por fila y con separación consistente */
+.level {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    /* maneja separación; por eso quitamos margin en .card */
 }

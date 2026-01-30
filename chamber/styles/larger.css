@@ -49,17 +49,31 @@
     #spot-cards p {
         padding: 0 10px;
     }
-
-    .join-page {
+    .secondmain {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        /* Formulario | Levels */
         gap: 2rem;
+        align-items: start;
     }
 
-    .join-page h1 {
-        grid-column: 1/3;
+    main h1 {
+        grid-column: 1 / -1;
     }
 
+    /* Tarjetas en columnas fluidas SIN cortar su ancho interno */
+    .level {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.25rem;
+    }
+
+    /* Asegura que cada tarjeta llene su celda también en escritorio */
+    .level .card {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;

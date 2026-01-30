@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Membership Join of Timbuktu Chamber with membership information and a form for submitting an application to join.">
+    <meta name="description"
+        content="Membership Join of Timbuktu Chamber with membership information and a form for submitting an application to join.">
     <meta name="author" content="Edgar Tulcan">
+
     <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -17,16 +21,14 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/thankyou.js" defer></script>
     <script src="scripts/join.js" defer></script>
-    
-    
+
     <title>Timbuktu Chamber of Commerce</title>
-    
+
     <meta property="og:type" content="website">
     <meta property="og:title" content="Cámara de Comercio — membership join page.">
     <meta property="og:description" content="Explora empresas locales: contacto, sitios web y niveles de membresía.">
     <meta property="og:image" content="https://edgartulcan.github.io/wdd231/chamber/images/og-image.png">
     <meta property="og:url" content="https://edgartulcan.github.io/wdd231/chamber">
-
 </head>
 
 <body>
@@ -35,33 +37,59 @@
         <span>Timbuktu Chamber of Commerce</span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     </header>
+
     <nav id="nav-bar" class="navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li class="current"><a href="#">Join</a></li>
-            <li><a href="discover.hmtl">Discover</a></li>
+            <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
+
     <main>
         <h1>Join</h1>
+
         <div class="secondmain">
-            
-            
-            <form method="GET" action="thankyou.html" class="join-form">
+            <!-- ===== Formulario ===== -->
+            <form method="GET" action="thankyou.html" class="join-form" novalidate>
                 <h2>Membership Application Form</h2>
-                <label>First Name <input type="text" name="first" required autocomplete="given-name"
-                        title="Your First Name"></label>
-                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                <label>Organization Title <input type="text" name="title" autocomplete="organization-title"
-                        title="Only letters, hyphens, and spaces with 7 characters minimum" pattern="^[A-Za-z -]{7,}$"></label>
-                <label>Email <input type="email" name="email" required placeholder="eltuki69@gmail.com" title="Your Email"
-                        autocomplete="email"></label>
-                <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes"
-                        placeholder="+593 9879 750 15"></label>
-                <label>Business or Organization Name <input type="text" name="organization-name" required
-                        autocomplete="organization" title="Your Organization Name"></label>
-            
+
+                <label>
+                    First Name
+                    <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+                </label>
+
+                <label>
+                    Last Name
+                    <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+                </label>
+
+                <label>
+                    Organization Title
+                    <!-- pattern HTML correcto (solo letras, espacios y guiones, mínimo 7) -->
+                    <input type="text" name="title" autocomplete="organization-title"
+                        title="Only letters, hyphens, and spaces with 7 characters minimum" pattern="^[A-Za-z \-]{7,}$">
+                </label>
+
+                <label>
+                    Email
+                    <input type="email" name="email" required placeholder="eltuki69@gmail.com" title="Your Email"
+                        autocomplete="email">
+                </label>
+
+                <label>
+                    Cell Phone
+                    <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="+593 9879 750 15">
+                </label>
+
+                <label>
+                    Business or Organization Name
+                    <input type="text" name="organization-name" required autocomplete="organization"
+                        title="Your Organization Name">
+                </label>
+
                 <div class="memb-level">
                     <div>Membership Level</div>
                     <label><input type="radio" name="radio" value="np"> NP Membership (for non-profit organizations - No
@@ -70,44 +98,62 @@
                     <label><input type="radio" name="radio" value="silver"> Silver Membership ($250)</label>
                     <label><input type="radio" name="radio" value="gold"> Gold Membership ($350)</label>
                 </div>
-            
-                <label class="text-field"> Business or Organization Description <textarea name="description"></textarea></label>
+
+                <label class="text-field">
+                    Business or Organization Description
+                    <textarea name="description"></textarea>
+                </label>
+
                 <input type="hidden" name="timestamp" id="timestamp">
-            
                 <input type="submit" value="Become a Member">
-                
             </form>
-        
-            <div class="level">
+
+            <!-- ===== Membership Levels ===== -->
+            <div class="level" aria-label="Membership Levels">
                 <h2>Membership Levels</h2>
-                <article class="card">
-                    <h3>Non Profit Membership Level</h3><button
-                        onclick="openModal('NP Membership is for non profit organizations and there is no fee. But with this membership level you can have some Networking oppotunities. ')">LEARN
-                        MORE</button>
+
+                <article class="card" tabindex="-1">
+                    <h3>Non Profit Membership Level</h3>
+                    <button class="learn-more"
+                        data-info="NP Membership is for non profit organizations and there is no fee. But with this membership level you can have some Networking oppotunities.">
+                        LEARN MORE
+                    </button>
                 </article>
-                <article class="card">
-                    <h3>Bronze Membership Level </h3><button
-                        onclick="openModal('This membership level will allow you to have more benefits, some discounts, training and also, many Networking oppotunities. The cost is $30 dlls.')">LEARN
-                        MORE</button>
+
+                <article class="card" tabindex="-1">
+                    <h3>Bronze Membership Level</h3>
+                    <button class="learn-more"
+                        data-info="This membership level will allow you to have more benefits, some discounts, training and also, many Networking oppotunities. The cost is $30 dlls.">
+                        LEARN MORE
+                    </button>
                 </article>
-                <article class="card">
-                    <h3> Silver Membership Level </h3><button
-                        onclick="openModal('As a Silver Member you will receive exclusive rewards, several discounts and spotlight positions on the home page. The cost is $50 dlls.')">LEARN
-                        MORE</button>
+
+                <article class="card" tabindex="-1">
+                    <h3>Silver Membership Level</h3>
+                    <button class="learn-more"
+                        data-info="As a Silver Member you will receive exclusive rewards, several discounts and spotlight positions on the home page. The cost is $50 dlls.">
+                        LEARN MORE
+                    </button>
                 </article>
-                <article class="card">
-                    <h3>Gold Membership Level </h3><button
-                        onclick="openModal('As a Gold Member you have access to all benefits and priority over the other levels, also, you will be include in special events. The cost is $100 dlls.')">LEARN
-                        MORE</button>
+
+                <article class="card" tabindex="-1">
+                    <h3>Gold Membership Level</h3>
+                    <button class="learn-more"
+                        data-info="As a Gold Member you have access to all benefits and priority over the other levels, also, you will be include in special events. The cost is $100 dlls.">
+                        LEARN MORE
+                    </button>
                 </article>
             </div>
-            <dialog id="theDetails">
-                <button id="closeModal">❌</button>
-                <h2>Membership Info</h2>
+
+            <!-- ===== Modal ===== -->
+            <dialog id="theDetails" aria-labelledby="modal-title">
+                <button id="closeModal" aria-label="Close">✖️</button>
+                <h2 id="modal-title">Membership Info</h2>
                 <p id="modal-info"></p>
             </dialog>
         </div>
     </main>
+
     <footer>
         <div class="contact">
             <h2>Timbuktu Chamber of Commerce</h2>
@@ -116,21 +162,25 @@
             <p>pgchamber@gmail.com</p>
             <p>(801)-785-5555</p>
         </div>
+
         <div class="social">
-            <a href="https://github.com/edgartulcan" target="_blank"><img src="images/github.png" alt="github" width="16"
-                    height="16"></a>
-            <a href="https://www.linkedin.com/in/alice-wind" target="_blank"><img src="images/linkedin.png" alt="linkedin"
-                    width="16" height="16"></a>
-            <a href="https://www.instagram.com/alejo_tuki?igsh=MTR2YnJyY2Q3bGU0Zw==" target="_blank"><img
-                    src="images/instagram.png" alt="instagram" width="16" height="16"></a>
+            <a href="https://github.com/edgartulcan" target="_blank" rel="noopener">
+                <img src="images/github.png" alt="github" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com/in/alice-wind" target="_blank" rel="noopener">
+                <img src="images/linkedin.png" alt="linkedin" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com/alejo_tuki?igsh=MTR2YnJyY2Q3bGU0Zw==" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="instagram" width="16" height="16">
+            </a>
         </div>
+
         <div class="personal">
             <p>WDD231 Class Project</p>
             <p>Edgar Tulcan</p>
-            <p>&copy;<span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+            <p>©<span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
-
     </footer>
 </body>
 
