@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Membership Join of Timbuktu Chamber with membership information and a form for submitting an application to join.">
+    <meta name="author" content="Edgar Tulcan">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+    <title>Timbuktu Chamber of Commerce</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cámara de Comercio — membership join page.">
+    <meta property="og:description" content="Explora empresas locales: contacto, sitios web y niveles de membresía.">
+    <meta property="og:image" content="https://edgartulcan.github.io/wdd231/chamber/images/og-image.png">
+    <meta property="og:url" content="https://edgartulcan.github.io/wdd231/chamber">
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.ico" alt="favilogo" width="16" height="16">
+        <span>Timbuktu Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Thank you for joining Timbuktu Chamber!</h1>
+        <section id="form-results">
+            <p>You have submitted the following information:</p>
+            <div id="info"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <h2>Timbuktu Chamber of Commerce</h2>
+            <p>100 N Main St</p>
+            <p>Timbuktu, UT 84062</p>
+            <p>pgchamber@gmail.com</p>
+            <p>(801)-785-5555</p>
+        </div>
+
+        <div class="social">
+            <a href="https://github.com/edgartulcan" target="_blank" rel="noopener">
+                <img src="images/github.png" alt="github" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com/in/alice-wind" target="_blank" rel="noopener">
+                <img src="images/linkedin.png" alt="linkedin" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com/alejo_tuki?igsh=MTR2YnJyY2Q3bGU0Zw==" target="_blank" rel="noopener">
+                <img src="images/instagram.png" alt="instagram" width="16" height="16">
+            </a>
+        </div>
+
+        <div class="personal">
+            <p>WDD231 Class Project</p>
+            <p>Edgar Tulcan</p>
+            <p>©<span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modified: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
