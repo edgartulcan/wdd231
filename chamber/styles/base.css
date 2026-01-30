@@ -413,66 +413,21 @@ footer p {
     padding: 10px;
 }
 
-/*members */
-.memb-level {
-    margin: 20px 0;
-}
-
-.memb-level input[type="radio"] {
-    margin: 0;
-    width: 20px;
-    height: 20px;
-}
-
-.memb-level label {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 12px;
-    cursor: pointer;
-}
-
-.memb-level div {
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.memb-levels {
-    margin-left: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.memb-levels div div {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
+.card {
+    display: grid;
     width: 100%;
-    max-width: 400px;
-    border-radius: 6px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 2s ease-out .5s;
-    animation-fill-mode: forwards;
-}
-
-.memb-levels h3 {
-    padding: 2rem;
-}
-.memb-levels div div {
-    background-color: var(--primary-color);
-    color: white;
+    max-width: 700px;
+    font-size: 23px;
     text-align: center;
-    width: 100%;
-    max-width: 400px;
-    border-radius: 6px;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 2s ease-out .5s;
-    animation-fill-mode: forwards;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background: rgba(51, 218, 10, 0.6);
+    border-radius: 10px;
+    animation-duration: 1s;
+    animation-name: slide-in;
 }
-
-/* ------ */
 
 .secondmain {
     display: flex;
