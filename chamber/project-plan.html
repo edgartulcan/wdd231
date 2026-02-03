@@ -4,76 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="This page is a site plan for my project and will help me to explain how i will edit my project.">
+    <meta name="description" content="Website Planning Document for Opticenter LS">
     <meta name="author" content="Edgar Tulcan">
-
-    <title>Individual Project Site Plan</title> 
-
     <link rel="stylesheet" href="styles/project-plan.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Website Planning Document</title>
 
 </head>
 
 <body>
+    <header>
+        <h1>Website Planning Document</h1>
+    </header>
     <main>
-        <h1>Individual Project Site Plan</h1>
-
-
-        <div class="card">
-            <h2>SITE NAME</h2>
-            <h3>INMOALANIS</h3>
-            <p>I selected this name because its a real name, in my family we have a business with that name. Represents
-                a business that is focused on rent of apartments in Guayaquil, Ecuador.</p>
-        </div>
-
-
-        <div class="card">
-            <h2>SITE PURPOSE</h2>
-            <h3>FOR INMOALANIS</h3>
-            <p>The site provides information about different apartments in Guayaquil City, listing images of the
-                apartments and all the related information, such as costs, address, details, etc.</p>
-        </div>
-
-
-        <div class="card">
-            <h2>SCENARIOS</h2>
-            <h3>FOR INMOALANIS</h3>
-            <p>• Which apartment has the cheapest rent?</p>
-            <p>• Which apartment has the most safe neighborhood?</p>
-        </div>
-
-        <div class="card">
-            <h2>COLOR SCHEMA</h2>
-            <h3>FOR INMOALANIS</h3>
-            <p>• I will use "cards" for each apartment, and the background for each card will be color beige. <br>• For
-                the text, the color will be black. <br> • The navigate menu will be brown. <br>• The background for the
-                "main", for the page, will be white.</p>
-        </div>
-
-
-        <div class="card">
-            <h2>TYPOGRAPHY</h2>
-            <h3>FOR INMOALANIS</h3>
-            <p>• I will be use "Alegreya" for the headings like "h1 and h2"</p>
-            <p>• I will be use "Quattrocento" for the paragraphs(p) and with "h3" as well</p>
-        </div>
-
-
-        <div class="mobile">
-            <h2>WIREFRAMES MOBILE VIEW</h2>
-            <img src="images/mobile.drawio.png" alt="mobile">
-        </div>
-
-
-        <div class="desk">
-            <h2>WIREFRAME WIDER VIEW</h2>
-            <img src="images/deskview.drawio.png" alt="wider">
-        </div>
+        <section>
+            <h2>Site Name</h2>
+            <p>Website Name: Tuki</p>
+            <p>Domain Name: Tuki.com</p>
+            <p>I selected this name because its a real name, in my family we have a business with that name. Represents a business that is focused on rent of apartments in Guayaquil, Ecuador.</p>
+        </section>
+        <section>
+            <h2>Site Purpose</h2>
+            <p>OTuki.</p>
+            <p>
+                The site provides information about different apartments in Guayaquil City, listing images of the apartments and all the
+                related information, such as costs, address, details, etc.
+            </p>
+        </section>
+        <section>
+            <h2>Scenarios</h2>
+            <p>
+                • Which apartment has the cheapest rent?
+                • Which apartment has the most safe neighborhood?
+            </p>
+        </section>
+        <section>
+            <h2>Color Schema</h2>
+            <p>
+                Primary Background Color: #2b2bd3<br>
+                -Main use: Header and Footer
+            </p>
+            <p>
+                Seconday Background Color: #7fd6ff<br>
+                -Main use: body
+            </p>
+            <p>
+                Tertiary Background Color: #eee<br>
+                -Main use: main
+            </p>
+            <p>
+                Primary Text Color: #000<br>
+                -Main use: main
+            </p>
+            <p>
+                Secondary Text Color: #eee<br>
+                -Main use: Header and Footer
+            </p>
+        </section>
+        <section>
+            <h2>Typography</h2>
+            <p>
+                Font: Roboto<br>
+                Backup font: Arial, Helvetica, sans-serif<br>
+                Use location: It will be used as the primary font and will be located in the whole body of the site.
+            </p>
+            <p>
+                Font: Yarndings<br>
+                Backup font: serif<br>
+                Use location: It will be used to create flower text in the footer.
+            </p>
+        </section>
+        <section class="sketch">
+            <h2>Wireframe</h2>
+            <div class="sketch-gallery">
+                <figure>
+                    <img src="images/mobile.drawio.png" alt="mobile view of website">
+                    <figcaption>Mobile Size View Wireframe</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/deskview.drawio.png" alt="desktop view of website">
+                    <figcaption>Desktop Size View Wireframe</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> <span class="yarndings"></span> Edgar Tulcan <span
+                class="yarndings"></span>
+            Guayaquil, Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
