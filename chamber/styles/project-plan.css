@@ -1,0 +1,51 @@
+p,
+h3 {
+    font-family: "Quattrocento", serif;
+}
+
+h1,
+h2 {
+    font-family: "Alegreya", serif;
+}
+
+.card {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    font-size: 23px;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid beige;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background: beige;
+    border-radius: 10px;
+}
+
+.mobile {
+    display: grid;
+    width: 100%;
+    max-width: 840px;
+    font-size: 23px;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid beige;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background: beige;
+    border-radius: 10px;
+}
+
+.desk {
+    display: grid;
+    width: 100%;
+    max-width: 1000px;
+    font-size: 23px;
+    text-align: center;
+    margin: 1rem;
+    border: 1px solid beige;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background: beige;
+    border-radius: 10px;
+}
