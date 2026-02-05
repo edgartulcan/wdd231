@@ -529,3 +529,79 @@ button {
         transition: none !important;
     }
 }
+
+/* discover page css */
+#places-cards {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+#places-cards section {
+    border: 1px solid var(--accent1-color);
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "description"
+        "address"
+        "button";
+}
+
+.places h2 {
+    margin-left: 1rem;
+}
+
+#visit {
+    margin: 1rem;
+    font-size: x-large;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+#places-cards figure {
+    margin: 0;
+    grid-area: image;
+    align-self: center;
+}
+
+#places-cards h2,
+#places-cards p,
+#places-cards address {
+    margin: 1rem 10px;
+}
+
+#places-cards h2 {
+    grid-area: title;
+}
+
+#places-cards figure img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+#places-cards p {
+    grid-area: description;
+}
+
+#places-cards address {
+    grid-area: address;
+}
+
+#places-cards button {
+    grid-area: button;
+    margin-top: .8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+    font-size: larger;
+    border: none;
+    padding: 1rem;
+}
