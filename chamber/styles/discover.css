@@ -1,105 +1,48 @@
+/* =========================================================
+   Header / Nav / Footer (desktop) — alineados con larger.css
+   ========================================================= */
 @media only screen and (min-width: 1025px) {
-    * {
-        font-family: "Quattrocento", serif;
 
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     header {
-        display: flex;
-        justify-content: center;
-        grid-gap: 1rem;
-        padding: 1px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        background-color: #1a529c;
+        grid-template-columns: 24px auto;
     }
 
-
-    .container {
-        display: flex;
-        justify-content: center;
-
-
-    }
-
-    .container img {
-        display: flex;
-        justify-content: left;
-        margin: 10px;
-        padding: 10px;
-    }
-
-    .container span {
-        display: flex;
-        justify-content: left;
-        margin: 60px;
-        padding: 10px;
-        font-size: 50px;
-        color: white;
-    }
-
-
-
-    #menu {
+    .hamburger {
         display: none;
     }
 
-
-    nav {
-        display: block;
-        width: 100%;
-
-    }
-
     .navigation {
-        display: flex;
-        justify-content: space-around;
-        gap: 2rem;
-        background-color: black;
-        width: 100%;
-        padding: 5px;
-        margin: 0;
-    }
-
-
-
-    .navigation a {
         display: block;
-        padding: 0.75rem;
-        text-align: right;
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-weight: 700;
-        transition: 0.5s;
-
-        font-size: clamp(1rem, 2vmin, 1.5rem);
+        border-bottom: solid 1px #eee;
     }
 
-
-    .navigation a:hover,
-    navigation a:active {
-        color: rgb(146, 0, 0);
-    }
-
-    .navigation li {
-        display: inline-block;
+    .navigation ul {
+        display: flex;
     }
 
     .navigation a {
-        display: flex;
-        list-style: none;
-        color: white;
-        text-decoration: none;
-
+        border: none;
     }
 
-    nav.open {
-        grid-template-rows: unset;
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
     }
+}
 
-
-
-    /**/
-
+/* =========================================================
+   Resto de estilos de discover.css (contenido en desktop)
+   ========================================================= */
+@media only screen and (min-width: 1025px) {
     main p {
         display: grid;
         justify-content: center;
@@ -107,13 +50,8 @@
         margin: .3rem 0;
     }
 
-
-    /**/
     #allplaces {
-
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-
-
 }
