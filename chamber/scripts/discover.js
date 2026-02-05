@@ -1,66 +1,64 @@
-import {places} from '../data/places.mjs'
-console.log(places);
+import { places } from 'data/places.mjs'
 
+const cardsContainer = document.querySelector("#places-cards")
 
-const showHere = document.querySelector("#allplaces")
+places.forEach(place => {
+    const card = document.createElement('section');
+    card.classList.add('card');
 
+    const title = document.createElement('h2');
+    title.textContent = place.name;
 
-function displayItems(places){
-    places.forEach(x => {
-        //build the card element
-        const thecard = document.createElement('div')
-        //build photo element
-        const thephoto = document.createElement('img')
-        thephoto.src = `images/${x.url}`
-        thephoto.alt = x.name
-        thephoto.loading = 'lazy';
-        thecard.appendChild(thephoto)
-        
-        const thetitle = document.createElement('h2')
-        thetitle.innerHTML = x.name
-        thecard.appendChild(thetitle)
-        
-        const theaddress = document.createElement('address')
-        theaddress.innerHTML = x.address
-        thecard.appendChild(theaddress)
-        
-        const thedesc = document.createElement('p')
-        thedesc.innerHTML = x.description
-        thecard.appendChild(thedesc)
-        
-        const button = document.createElement('button')
-        button.textContent = 'LEARN MORE'
-        button.classList.add('learn-more-btn');
-        button.addEventListener('click', ()=>{
-            alert(`Hello there, this is a nice place even to visit. We will add more information about ${x.name} in the future.`);
-        });
-        thecard.appendChild(button);
-        
-        showHere.appendChild(thecard)
-    })
+    const figure = document.createElement('figure');
+    const img = document.createElement('img');
+    img.src = `images/${place.image}`;
+    img.alt = place.name;
+    img.loading = 'lazy';
+    figure.appendChild(img);
+
+    const description = document.createElement('p');
+    description.textContent = place.description;
+
+    const address = document.createElement('address');
+    address.textContent = place.address;
+
+    const button = document.createElement('button');
+    button.textContent = "Learn More";
+
+    card.appendChild(title);
+    card.appendChild(figure);
+    card.appendChild(description);
+    card.appendChild(address);
+    card.appendChild(button);
+
+    cardsContainer.appendChild(card);
+
+});
+
+const visitKey = "last-visit";
+const visitDisplay = document.querySelector("#visit");
+
+const lastVisit = localStorage.getItem(visitKey);
+const now = new Date();
+
+if (visitDisplay) {
+    if (lastVisit) {
+        const previous = new Date(lastVisit);
+        const diffMs = now - previous;
+
+        const seconds = Math.floor(diffMs / 1000);
+        const minutes = Math.floor(seconds / 60);
+        const hours = Math.floor(minutes / 60);
+        const days = Math.floor(hours / 24);
+
+        if (hours >= 24) {
+            visitDisplay.textContent = `You last visited ${days} days ago.`;
+        } else {
+            visitDisplay.textContent = `Back so soon! Awesome!`;            
+        } 
+    } else {
+        visitDisplay.textContent = "Welcome! Let us know if you have any questions.";
+    } 
 }
 
-displayItems(places)
-
-
-
-function visitas() {
-    const lastdate = localStorage.getItem('last');
-
-    if (lastdate){
-        const now = new Date();
-        const last = new Date(lastdate);
-
-
-        const difference = now - last;
-        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-
-
-        alert(`"You last visited ${days} days ago.`)
-    }
-    else{
-        alert(`WELCOME.`);
-    }
-    localStorage.setItem('last', new Date().toISOString());
-}
-window.onload = visitas;
+localStorage.setItem(visitKey, now.toISOString());
