@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the index page, this page will help the user to see all the apartments we have in InmoAlanis, they can see all the details related with that.">
+    <meta name="author" content="Edgar Tulcan">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:description"
+        content="This is the home page, in this page the user will be able to see all our apartments, they can check all the details and select his favorite.">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- Archivos css que se utilizaran -->
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-medium.css">
+    <link rel="stylesheet" href="styles/index-larger.css">
+
+    <!-- Scripts que se utilizaran -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/code.js" type="module"></script>
+
+    <!-- Tipo de fuente que se utilizara -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quattrocento:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>HOME INMOALANIS</title>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="container">
+            <a id="menu" href="#" aria-label="Open menu"></a>
+            <img src="images/mylogo.webp" alt="logo" height="100" loading="lazy">
+            <span>INMOALANIS</span>
+        </div>
+    </header>
+
+    <nav id="animateme">
+        <ul class="navigation">
+            <li><a href="index.html" id="index">INDEX</a></li>
+            <li><a href="about.html" id="about">ABOUT US</a></li>
+            <li><a href="contact.html" id="contact">CONTACT US</a></li>
+
+
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home Tuki</h1>
+        <div id="allapartments"></div>
+
+        <div id="infoModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="modalCloseBtn">❎</span>
+                <h3 id="modalTitle">Titulo</h3>
+                <p id="modalText">Texto Modal</p>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="izq">
+            <p>Tuki</p>
+            <p>WATCH MY VIDEO FOR THE JAVASCRIPT REQUIREMENTS</p>
+            <a href=""
+                target="_blank">JavaScript Requirements</a>
+            <p class="first">©<span id="CurrentYear"></span> Tulcan Alvarez Edgar Guayaquil, Ecuador </p>
+            <p class="second">Last Update: <span id="lastModified"></span></p>
+        </div>
+
+        <div class="der">
+            <p>WDD231 FINAL PROJECT</p>
+            <p>Edgar Tulcan</p>
+            <p>(593)9 8790 5916</p>
+        </div>
+    </footer>
+</body>
+
+</html>
