@@ -1,0 +1,235 @@
+/*navigate Part*/
+* {
+    font-family: "Quattrocento", serif;
+
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+#menu {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+
+#menu::before {
+    display: block;
+    content: "≡";
+    font-size: 40px;
+    transform: translateX(90px);
+}
+
+nav {
+    background-color: rgba(179, 132, 132, 0.226);
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+
+
+}
+
+
+
+nav.open .navigation {
+    display: block;
+}
+
+
+.navigation li {
+    display: block;
+
+}
+
+.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "X";
+    font-size: 40px;
+}
+
+header,
+nav,
+.navigation {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*navigate part up*/
+
+
+header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    grid-gap: 1rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    margin: 10px;
+    padding: 40px;
+    transform: translateX(70px);
+
+}
+
+.container span {
+    text-align: center;
+    margin: 60px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(136, 50, 50);
+    transform: translateX(-32px);
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+
+.navigation {
+    display: none;
+
+}
+
+
+.navigation a:hover,
+.navigation a:active {
+    color: rgb(255, 255, 255);
+}
+
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgba(255, 223, 223, 0.295);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+
+
+h1 {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 223, 223);
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+footer div,
+p {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+footer span {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+footer a {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+.first,
+.second {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+.izq {
+    display: grid;
+    align-content: space-between;
+    text-align: left;
+}
+
+.der {
+    display: grid;
+    align-content: space-between;
+    text-align: right;
+}
+
+/*For the Button contact us*/
+
+.hero {
+    position: relative;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.425);
+}
+
+.hero li {
+    text-align: right;
+    list-style: none;
+}
+
+#joined {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(48, 49, 49);
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+
+}
+
+
+#joined:hover {
+    background-color: #ad1b1b8c;
+    cursor: pointer;
+}
+
+.heroimage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+main div p {
+    background-color: white;
+    font-size: 26px;
+}
