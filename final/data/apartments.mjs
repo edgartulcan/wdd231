@@ -28,7 +28,7 @@ PRICE: $500 x month`
     "address": "45 Cedros St, Altamira Neighborhood",
     "description": "Spacious two-bedroom apartment with private parking.",
     "price": "$10,800 MXN/month",
-    "url": "prove4.webp",
+    "url": "gye2.webp",
     "details": `APARTMENT FOR RENT
 Altamira Suites Altamira Neighborhood
 
