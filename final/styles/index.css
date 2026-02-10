@@ -1,6 +1,6 @@
 * {
-    background-color: white;
-    font-family: "Quattrocento", serif;
+    background-color: #7fd6ff;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
 
@@ -81,6 +81,7 @@ header {
     grid-gap: 1rem;
     padding: 0;
     margin: 0;
+    background-color: #2b2bd3;
 
 }
 
