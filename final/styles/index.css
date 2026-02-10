@@ -1,5 +1,4 @@
 * {
-    background-color: #7fd6ff;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -103,7 +102,6 @@ header {
     margin: 60px;
     padding: 10px;
     font-size: 30px;
-    color: rgb(136, 50, 50);
     transform: translateX(-32px);
 }
 
