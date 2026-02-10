@@ -1,0 +1,314 @@
+* {
+    background-color: white;
+    font-family: "Quattrocento", serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+/*navigate Part*/
+#menu {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+
+#menu::before {
+    display: block;
+    content: "≡";
+    font-size: 40px;
+    transform: translateX(90px);
+}
+
+nav {
+    background-color: rgba(179, 132, 132, 0.226);
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+
+
+}
+
+
+
+nav.open .navigation {
+    display: block;
+}
+
+
+.navigation li {
+    display: block;
+
+}
+
+.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "X";
+    font-size: 40px;
+}
+
+header,
+nav,
+.navigation {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*navigate part up*/
+
+
+header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    grid-gap: 1rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    margin: 10px;
+    padding: 40px;
+    transform: translateX(70px);
+
+}
+
+.container span {
+    text-align: center;
+    margin: 60px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(136, 50, 50);
+    transform: translateX(-32px);
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+
+.navigation {
+    display: none;
+
+}
+
+
+.navigation a:hover,
+.navigation a:active {
+    color: rgb(255, 255, 255);
+}
+
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgba(255, 223, 223, 0.295);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+/*Second part*/
+h1 {
+    padding: 10px;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+
+    color: black;
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1.5rem;
+
+}
+
+#allapartments div,
+#allapartments div h2,
+#allapartments div img,
+#allapartments div p,
+#allapartments div address,
+#allapartments div h3 {
+    background-color: #f3e6d3;
+}
+
+#allapartments div {
+    margin: 1rem 8px;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "url"
+        "name"
+        "address"
+        "description"
+        "price";
+
+}
+
+#allapartments div h2 {
+    margin: 1rem 10px;
+
+
+}
+
+
+#allapartments div img {
+    width: 100%;
+    grid-area: url;
+
+}
+
+#allapartments div p {
+    margin: 1rem 10px;
+    font-size: 19px;
+    grid-area: description;
+    display: flex;
+    justify-content: center;
+}
+
+
+#allapartments div address {
+    margin: 1rem 10px;
+    grid-area: address;
+    display: flex;
+    justify-content: center;
+}
+
+#allapartments div h3 {
+    margin: 1rem 10px;
+    grid-area: price;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 223, 223);
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+footer div,
+p {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+footer span {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+footer a {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+.first,
+.second {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+.izq {
+    display: grid;
+    align-content: space-between;
+    text-align: left;
+}
+
+.der {
+    display: grid;
+    align-content: space-between;
+    text-align: right;
+}
+
+
+/*For the Modal*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(131, 118, 118, 0.527);
+}
+
+.modal-content {
+    background-color: rgb(255, 255, 255);
+    margin: 10% auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 700px;
+
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/*Buttons*/
+
+
+.learn-more-btn {
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.learn-more-btn:hover {
+    background-color: #000000d0;
+    color: white;
+    cursor: pointer;
+}

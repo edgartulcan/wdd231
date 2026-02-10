@@ -1,0 +1,93 @@
+@media only screen and (min-width: 820px) {
+
+
+    #allapartments div {
+
+        grid-template-areas:
+            "url name"
+            "url description"
+            "url address"
+            "url price";
+    }
+
+    #allapartments div img {
+        width: 300px;
+    }
+
+    /*Second Part*/
+
+
+    img:hover {
+        box-shadow: 0 0 50px #000000;
+        opacity: .5;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        grid-gap: 1rem;
+        padding: 20px;
+        margin: 0;
+
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .container img {
+        transform: translateX(20px);
+    }
+
+
+    #menu {
+        display: none;
+    }
+
+
+    nav {
+        display: block;
+        width: 100%;
+
+    }
+
+
+    .navigation {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        background-color: rgba(255, 223, 223, 0.295);
+        padding: 20px;
+        font-size: 20px;
+
+    }
+
+    .navigation a {
+        background-color: rgb(241, 223, 223);
+    }
+
+    .navigation a:hover,
+    navigation a:active {
+        color: white;
+    }
+
+    .navigation li {
+        display: inline-block;
+        background-color: rgba(179, 132, 132, 0.473);
+    }
+
+
+    nav.open {
+        grid-template-rows: unset;
+    }
+
+
+    /*Buttons*/
+    .learn-more-btn {
+        width: 300px;
+    }
+}
