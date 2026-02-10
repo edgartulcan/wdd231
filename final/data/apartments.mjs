@@ -71,13 +71,13 @@ Amenities:
 PRICE: $400 X month`
   },
   {
-    "name": "Lomas del Mar",
-    "address": "230 Ensenada Blvd, Playas de Tijuana",
-    "description": "Oceanfront apartment with terrace and shared pool.",
-    "price": "$14,000 MXN/month",
+    "name": "Villa del rey",
+    "address": "Av Daule y Mino",
+    "description": "Oceanfront apartment with terrace.",
+    "price": "$400 x month",
     "url": "gye4.webp",
     "details": `APARTMENT FOR RENT
-Lomas del Mar Playas de Tijuana
+Villa del rey
 
 Description:
 - 3 Bedrooms
@@ -88,20 +88,19 @@ Description:
 
 Amenities:
 - Covered parking
-- Shared pool
 - BBQ area
 - Gated community with surveillance
 
-PRICE: $14,000 MXN/month`
+PRICE: $400 x month`
   },
   {
-    "name": "Pacific Towers",
+    "name": "Pacific Blue",
     "address": "556 Fundadores Blvd, El Rubí",
     "description": "Condo with 24/7 security, gym, and event room.",
-    "price": "$13,200 MXN/month",
+    "price": "$3,200 x month",
     "url": "gye5.webp",
     "details": `CONDO FOR RENT
-Pacific Towers El Rubí
+Pacific Blue, El Rubí
 
 Description:
 - 2 Bedrooms
@@ -116,16 +115,16 @@ Amenities:
 - 24/7 Security
 - Controlled access
 
-PRICE: $13,200 MXN/month`
+PRICE: $3,200 x month`
   },
   {
     "name": "Monteverde",
-    "address": "89 Fresno St, Otay Universidad",
+    "address": "Av. Quito y Luque",
     "description": "Three-bedroom apartment perfect for large families.",
-    "price": "$15,500 MXN/month",
+    "price": "$550 x month",
     "url": "gye6.webp",
     "details": `APARTMENT FOR RENT
-Monteverde Otay Universidad
+Monteverde Otay, Quito y Luque
 
 Description:
 - 3 Bedrooms
@@ -140,13 +139,13 @@ Amenities:
 - Gated access
 - Family-friendly environment
 
-PRICE: $15,500 MXN/month`
+PRICE: $550 x month`
   },
   {
     "name": "Casa Real",
     "address": "301 Las Américas Ave, Libertad Neighborhood",
     "description": "Semi-furnished apartment with great natural lighting.",
-    "price": "$9,500 MXN/month",
+    "price": "$950 x month",
     "url": "gye7.webp",
     "details": `APARTMENT FOR RENT
 Casa Real Libertad Neighborhood
@@ -163,13 +162,13 @@ Amenities:
 - Great natural light
 - Quiet residential area
 
-PRICE: $9,500 MXN/month`
+PRICE: $950 x month`
   },
   {
     "name": "Río Terraces",
     "address": "675 Centenario Blvd, Zona Río",
-    "description": "Luxury apartment with modern finishes and private elevator.",
-    "price": "$16,800 MXN/month",
+    "description": "Luxury apartment with modern finishes and private pool.",
+    "price": "$680 x month",
     "url": "gye8.webp",
     "details": `LUXURY APARTMENT FOR RENT
 Río Terraces Zona Río
@@ -178,7 +177,7 @@ Description:
 - 3 Bedrooms
 - 3 Bathrooms
 - High-end kitchen and finishes
-- Private elevator access
+- Private pool
 - Spacious living and dining area
 
 Amenities:
@@ -186,16 +185,16 @@ Amenities:
 - Concierge service
 - Gated community with full security
 
-PRICE: $16,800 MXN/month`
+PRICE: $680 x month`
   },
   {
-    "name": "Insurgentes",
-    "address": "77 Laurel St, Chapultepec Neighborhood",
+    "name": "Costras mia",
+    "address": "77 Laurel St, Villa Club Neighborhood",
     "description": "Located in front of a park, with green areas and playground.",
-    "price": "$11,300 MXN/month",
+    "price": "$1000 x month",
     "url": "gye9.webp",
     "details": `APARTMENT FOR RENT
-Insurgentes Chapultepec Neighborhood
+Costra mia Villa Club Neighborhood
 
 Description:
 - 2 Bedrooms
@@ -209,21 +208,20 @@ Amenities:
 - Park access
 - Family-oriented gated complex
 
-PRICE: $11,300 MXN/month`
+PRICE: $1000 x month`
   },
   {
-    "name": "Panorama Residences",
-    "address": "1450 Cuauhtémoc Sur Blvd, La Cacho",
-    "description": "Panoramic view of the city, ideal for executives.",
-    "price": "$13,900 MXN/month",
+    "name": "Aurora Residences",
+    "address": "Alborada 5ta etapa y Vinces",
+    "description": "Zone safety, ideal for bussiness.",
+    "price": "$1900 x month",
     "url": "gye10.webp",
-    "details": `EXECUTIVE APARTMENT FOR RENT
-Panorama Residences La Cacho
+    "details": `BUSSINESS APARTMENT FOR RENT
+Aurora Residences La Cacho
 
 Description:
 - 2 Bedrooms
 - 2 Bathrooms
-- Balcony with panoramic view
 - Modern kitchen
 - Bright living and dining space
 
@@ -232,16 +230,16 @@ Amenities:
 - Concierge and controlled access
 - Perfect for professionals
 
-PRICE: $13,900 MXN/month`
+PRICE: $1900 x month`
   },
   {
     "name": "Costa Bella",
-    "address": "312 Pacific Ave, Playas de Tijuana",
+    "address": "312 Pacific Ave, Playas de Salinas",
     "description": "Just steps from the beach, includes private terrace.",
-    "price": "$15,000 MXN/month",
+    "price": "$1000 x month",
     "url": "gye11.webp",
     "details": `BEACH APARTMENT FOR RENT
-Costa Bella Playas de Tijuana
+Costa Bella Playas de Salina
 
 Description:
 - 2 Bedrooms
@@ -255,13 +253,13 @@ Amenities:
 - Pet-friendly
 - Ocean view
 
-PRICE: $15,000 MXN/month`
+PRICE: $1000 x month`
   },
   {
     "name": "Urban Nature",
     "address": "202 Olivo St, Natura",
     "description": "New eco-friendly development with solar panels and gardens.",
-    "price": "$10,200 MXN/month",
+    "price": "$700 x month",
     "url": "gye12.webp",
     "details": `ECO-FRIENDLY APARTMENT FOR RENT
 Urban Nature Natura
@@ -278,16 +276,16 @@ Amenities:
 - Bike paths
 - Parking included
 
-PRICE: $10,200 MXN/month`
+PRICE: $700 x month`
   },
   {
     "name": "Golden View",
-    "address": "55 Dorado St, Buenos Aires Neighborhood",
+    "address": "55 Dorado St, Lemos Neighborhood",
     "description": "Quiet condo with security and controlled access.",
-    "price": "$9,800 MXN/month",
+    "price": "$2800 x month",
     "url": "gye13.webp",
     "details": `CONDO FOR RENT
-Golden View Buenos Aires Neighborhood
+Golden View, Lemos Neighborhood
 
 Description:
 - 2 Bedrooms
@@ -301,16 +299,16 @@ Amenities:
 - 24/7 surveillance
 - Peaceful community
 
-PRICE: $9,800 MXN/month`
+PRICE: $2800 x month`
   },
   {
     "name": "High Summit",
-    "address": "999 Paseo de los Héroes Ave, Zona Río",
+    "address": "Urdesa Central y Colon",
     "description": "High-floor apartment with border view.",
-    "price": "$14,700 MXN/month",
+    "price": "$700 x month",
     "url": "gye14.webp",
     "details": `HIGH-RISE APARTMENT FOR RENT
-High Summit Zona Río
+High Summit, Urdesa Central y Colon
 
 Description:
 - 3 Bedrooms
@@ -324,13 +322,13 @@ Amenities:
 - Border view
 - High-speed elevator
 
-PRICE: $14,700 MXN/month`
+PRICE: $700 x month`
   },
   {
     "name": "Royal Palms",
-    "address": "88 Las Palmas Ave, La Mesa",
+    "address": "Las Palmas, La Mesa",
     "description": "Lovely family-friendly apartment with backyard.",
-    "price": "$11,700 MXN/month",
+    "price": "$1000 x month",
     "url": "gye15.webp",
     "details": `FAMILY APARTMENT FOR RENT
 Royal Palms La Mesa
@@ -347,16 +345,16 @@ Amenities:
 - Located in cul-de-sac
 - Family-friendly neighborhood
 
-PRICE: $11,700 MXN/month`
+PRICE: $1000 x month`
   },
   {
-    "name": "The Florido",
-    "address": "90 Las Palmas Ave, Insurgentes",
+    "name": "Quininde",
+    "address": "Eloy Alfaro y Dr. Aguirre",
     "description": "Quit Apartment, ideal for executives.",
-    "price": "$9,500 MXN/month",
+    "price": "$950 x month",
     "url": "gye16.webp",
     "details": `EXECUTIVE APARTMENT FOR RENT
-The Florido Insurgentes
+Quininde, Eloy Alfaro y Dr. Aguirre
 
 Description:
 - 1 Bedroom
@@ -370,6 +368,6 @@ Amenities:
 - Quiet area
 - Ideal for professionals
 
-PRICE: $9,500 MXN/month`
+PRICE: $950 x month`
   }
 ];
