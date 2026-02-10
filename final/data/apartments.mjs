@@ -24,13 +24,13 @@ Amenities:
 PRICE: $500 x month`
   },
   {
-    "name": "Altamira Suites",
-    "address": "45 Cedros St, Altamira Neighborhood",
+    "name": "Villa Nueva",
+    "address": "Puntilla y Asturia",
     "description": "Spacious two-bedroom apartment with private parking.",
-    "price": "$10,800 MXN/month",
+    "price": "$800 x month",
     "url": "gye2.webp",
     "details": `APARTMENT FOR RENT
-Altamira Suites Altamira Neighborhood
+Villa Nueva Suites Neighborhood
 
 Description:
 - 2 Bedrooms with closets
@@ -45,30 +45,30 @@ Amenities:
 - Pet-friendly
 - Small internal park
 
-PRICE: $10,800 MXN/month`
+PRICE: $800 x month`
   },
   {
     "name": "Villa del Sol",
-    "address": "789 Reforma Ave, Downtown Tijuana",
-    "description": "Cozy studio in the city center, ideal for professionals.",
-    "price": "$8,000 MXN/month",
+    "address": "Avenida Carlos Julio Arrosemena y Luque",
+    "description": "Department for students with private parking.",
+    "price": "$400 x month",
     "url": "gye3.webp",
-    "details": `STUDIO FOR RENT
-Villa del Sol Downtown Tijuana
+    "details": `DEPARTMENT FOR RENT
+Villa del Sol 
 
 Description:
-- Open studio layout
 - 1 Full bathroom
 - Kitchenette included
 - Small dining and living space
 - Excellent natural light
 
 Amenities:
+- Private parking
 - Street parking
 - Prime central location
 - Walking distance to shops and restaurants
 
-PRICE: $8,000 MXN/month`
+PRICE: $400 X month`
   },
   {
     "name": "Lomas del Mar",
