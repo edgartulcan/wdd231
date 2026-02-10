@@ -4,7 +4,7 @@ export const apartments = [
     "address": "1234 Agua Caliente Blvd, Zona Río",
     "description": "Modern apartment with an equipped kitchen and a balcony.",
     "price": "$12,500 MXN/month",
-    "url": "prove3.webp",
+    "url": "gye1.webp",
     "details": `APARTMENT FOR RENT
 Horizonte Residences Gated Community in Zona Río
 
