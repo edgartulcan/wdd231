@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the contact page, this page will help the user to send us his information and to ask whatever question they have related with the apartments.">
+    <meta name="author" content="Edgar Tulcan">
+
+<!-- Meta Og -->
+    <meta property="og:title" content="Contact Page">
+    <meta property="og:description"
+        content="This is the Contact page, in this page the user will be able to fill a form, they can send us his information to ask questions and to start the process to rent any apartment.">
+    <meta property="og:image" content="https://moroninavarro.github.io/wdd231/final/images/inmoalanis.webp">
+    <meta property="og:url" content="https://moroninavarro.github.io/wdd231/final/">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Archivos css que se utilizaran -->
+    <link rel="stylesheet" href="styles/joinus.css">
+    <link rel="stylesheet" href="styles/joinus-larger.css">
+
+    <!-- Scripts que se utilizaran -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/code.js" type="module"></script>
+
+    <!-- Tipo de fuente que se utilizara -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quattrocento:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Contact Tuki</title>
+</head>
+
+
+<body>
+
+    <header>
+
+        <div class="container">
+            <a id="menu" href="#" aria-label="Open menu"></a>
+            <img src="images/mylogo.webp" alt="logo" height="100" loading="lazy">
+            <span>Tuki</span>
+        </div>
+
+    </header>
+
+    <nav id="animateme">
+        <ul class="navigation">
+            <li><a href="index.html" id="index">Index</a></li>
+            <li><a href="about.html" id="about">About us</a></li>
+            <li><a href="contact.html" id="contact">Contact us</a></li>
+
+
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Contact Tuki</h1>
+        <div class="datos">
+            <form onsubmit="return testInfo(document.querySelector('input[name=title]'))" method="GET"
+                action="thanks.html">
+
+                <h2>¡Send us your Information!</h2>
+                <label> First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+
+                <label> Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+
+                <label> Email <input type="email" name="email" required placeholder="something123@gmail.com"
+                        title="Your Email" autocomplete="email"></label>
+
+                <label> Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        placeholder="664-369-52-60"></label>
+
+                <label> Which apartment are you interested in? <textarea name="description" title="Business Description"
+                        placeholder="Tell us which apartment are you interested in and ask any question you have..."></textarea></label>
+
+
+                <label> <input type="hidden" name="timestamp" id="timestamp"></label>
+
+
+
+                <h3>How would you prefer to be contacted?</h3>
+                <label> <input type="radio" name="membership" value="email"> Email</label>
+                <label> <input type="radio" name="membership" value="whatsapp"> WhatsApp</label>
+
+
+                <input type="submit" value="Send Now">
+            </form>
+
+            <script> document.addEventListener('DOMContentLoaded', () => {
+                    const timestampInput = document.getElementById('timestamp');
+                    const now = new Date();
+
+                    timestampInput.value = now.toLocaleString();
+
+                });</script>
+
+
+    </main>
+
+
+
+    <footer>
+        <div class="izq">
+            <p>Tuki</p>
+            <p>WATCH MY VIDEO FOR THE JAVASCRIPT REQUIREMENTS</p>
+            <a href="" target="_blank">JavaScript Requirements</a>
+            <p class="first">©<span id="CurrentYear"></span> Tulcan Alvarez Edgar Guayaquil, Ecuador </p>
+            <p class="second">Last Update: <span id="lastModified"></span></p>
+        </div>
+    
+        <div class="der">
+            <p>WDD231 FINAL PROJECT</p>
+            <p>Edgar Tulcan</p>
+            <p>(593)9 8790 5916</p>
+        </div>
+    </footer>
+    
+</body>
+
+</html>
