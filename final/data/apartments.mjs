@@ -1,9 +1,9 @@
 export const apartments = [
   {
-    "name": "Horizonte Residences",
-    "address": "1234 Agua Caliente Blvd, Zona Río",
+    "name": "Bellavista Residences",
+    "address": "Urdesa y Colon",
     "description": "Modern apartment with an equipped kitchen and a balcony.",
-    "price": "$12,500 MXN/month",
+    "price": "$500 x month",
     "url": "gye1.webp",
     "details": `APARTMENT FOR RENT
 Horizonte Residences Gated Community in Zona Río
@@ -21,7 +21,7 @@ Amenities:
 - Rooftop access
 - 24/7 security booth
 
-PRICE: $12,500 MXN/month`
+PRICE: $500 x month`
   },
   {
     "name": "Altamira Suites",
