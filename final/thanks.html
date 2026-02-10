@@ -9,20 +9,60 @@
 
 <!-- Archivos css que se utilizaran -->
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/contact-larger.css">
     <link rel="stylesheet" href="styles/thanks.css">
+    
 
 <!-- Scripts que se utilizaran -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/code.js" type="module"></script>
+    <script src="scripts/contact.js" defer></script>
     <script src="scripts/thankyou.js"></script>
 
     <title>Details</title>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <a id="menu" href="#" aria-label="Open menu"></a>
+            <img src="images/icon-logo.webp" alt="logo" height="100" loading="lazy">
+            <span>Tuki Agencia de Bienes Raices</span>
+        </div>
+    </header>
+    
+    <nav id="animateme">
+        <ul class="navigation">
+            <li><a href="index.html" id="index">Index</a></li>
+            <li><a href="about.html" id="about">About us</a></li>
+            <li><a href="contact.html" id="contact">Contact us</a></li>
+    
+    
+        </ul>
+    </nav>
 
     <main>
         <h1>Your Request</h1>
         <div id="results"></div>
     </main>
+
+    <footer>
+        <div class="izq">
+            <p>Tuki</p>
+            <p>WATCH MY VIDEO FOR THE JAVASCRIPT REQUIREMENTS</p>
+            <a href="" target="_blank">JavaScript Requirements</a>
+            <p class="first">©<span id="CurrentYear"></span> Tulcan Alvarez Edgar Guayaquil, Ecuador </p>
+            <p class="second">Last Update: <span id="lastModified"></span></p>
+        </div>
+    
+        <div class="der">
+            <p>WDD231 FINAL PROJECT</p>
+            <p>Edgar Tulcan</p>
+            <p>(593)9 8790 5916</p>
+        </div>
+    </footer>
     
 </body>
 
