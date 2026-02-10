@@ -1,5 +1,4 @@
 * {
-    background-color: white;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -80,6 +79,7 @@ header {
     grid-gap: 1rem;
     padding: 0;
     margin: 0;
+    background-color: #2b2bd3;
 
 }
 
@@ -101,7 +101,6 @@ header {
     margin: 60px;
     padding: 10px;
     font-size: 30px;
-    color: rgb(136, 50, 50);
     transform: translateX(-32px);
 }
 
@@ -133,7 +132,7 @@ nav ul {
     text-align: right;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    background-color: rgba(255, 223, 223, 0.295);
+    background-color: #2b2bd3;
     font-weight: 700;
     transition: 0.5s;
     font-size: 25px;
@@ -153,7 +152,7 @@ h1 {
 footer {
     display: flex;
     justify-content: space-around;
-    background-color: rgb(255, 223, 223);
+    background-color: #2b2bd3;
     padding: 20px;
     text-align: center;
     font-size: 22px;
@@ -162,21 +161,21 @@ footer {
 
 footer div,
 p {
-    background-color: rgba(255, 223, 223, 0.295);
+    background-color: #2b2bd3;
 }
 
 footer span {
-    background-color: rgba(255, 223, 223, 0.295);
+    background-color: #2b2bd3;
 }
 
 footer a {
-    background-color: rgba(255, 223, 223, 0.295);
+    background-color: #2b2bd3;
 }
 
 
 .first,
 .second {
-    background-color: rgba(255, 223, 223, 0.295);
+    background-color: #2b2bd3;
 }
 
 .izq {
