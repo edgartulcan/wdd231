@@ -1,0 +1,8 @@
+#results {
+    background-color: rgb(240, 203, 182);
+    padding: 0 1rem;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 30px;
+    text-align: center;
+}

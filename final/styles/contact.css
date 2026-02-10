@@ -1,0 +1,266 @@
+* {
+    background-color: white;
+    font-family: "Quattrocento", serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/*navigate Part*/
+#menu {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #ffffff;
+    color: #000000;
+
+}
+
+
+#menu::before {
+    display: block;
+    content: "≡";
+    font-size: 40px;
+    transform: translateX(90px);
+}
+
+nav {
+    background-color: rgba(179, 132, 132, 0.226);
+    display: grid;
+    grid-template-rows: 0fr;
+
+    transition: grid-template-rows 0.5s ease-out;
+}
+
+nav.open {
+    grid-template-rows: 1fr;
+
+
+}
+
+
+
+nav.open .navigation {
+    display: block;
+}
+
+
+.navigation li {
+    display: block;
+
+}
+
+.open li {
+    display: block;
+}
+
+#menu.open::before {
+    content: "X";
+    font-size: 40px;
+}
+
+header,
+nav,
+.navigation {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+/*navigate part up*/
+
+
+header {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    grid-gap: 1rem;
+    padding: 0;
+    margin: 0;
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.container img {
+    margin: 10px;
+    padding: 40px;
+    transform: translateX(70px);
+
+}
+
+.container span {
+    text-align: center;
+    margin: 60px;
+    padding: 10px;
+    font-size: 30px;
+    color: rgb(136, 50, 50);
+    transform: translateX(-32px);
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+
+
+.navigation {
+    display: none;
+
+}
+
+
+.navigation a:hover,
+.navigation a:active {
+    color: rgb(255, 255, 255);
+}
+
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: right;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgba(255, 223, 223, 0.295);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+h1 {
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 223, 223);
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+footer div,
+p {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+footer span {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+footer a {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+
+.first,
+.second {
+    background-color: rgba(255, 223, 223, 0.295);
+}
+
+.izq {
+    display: grid;
+    align-content: space-between;
+    text-align: left;
+}
+
+.der {
+    display: grid;
+    align-content: space-between;
+    text-align: right;
+}
+
+
+/*SECOND PART*/
+
+
+
+form {
+    margin: 3rem 2%;
+    padding: 2px;
+    margin-right: 4rem;
+}
+
+form label {
+    display: block;
+    font-size: 1.5rem;
+    color: purple;
+    padding-top: .2rem;
+}
+
+h3 {
+    font-size: 20px;
+    color: #000000;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form textarea,
+form select {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .7rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #555;
+    font-size: 1rem;
+    color: #3D405B;
+    width: 100%;
+
+}
+
+form input:required {
+    border-left-color: #d70000;
+}
+
+form input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+
+form input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #3D405B;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+form input[type=submit]:hover {
+    background-color: rgba(187, 30, 64, 0.644);
+    cursor: pointer;
+}
