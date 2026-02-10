@@ -52,7 +52,7 @@ PRICE: $10,800 MXN/month`
     "address": "789 Reforma Ave, Downtown Tijuana",
     "description": "Cozy studio in the city center, ideal for professionals.",
     "price": "$8,000 MXN/month",
-    "url": "prove5.webp",
+    "url": "gye3.webp",
     "details": `STUDIO FOR RENT
 Villa del Sol Downtown Tijuana
 
@@ -75,7 +75,7 @@ PRICE: $8,000 MXN/month`
     "address": "230 Ensenada Blvd, Playas de Tijuana",
     "description": "Oceanfront apartment with terrace and shared pool.",
     "price": "$14,000 MXN/month",
-    "url": "prove6.webp",
+    "url": "gye4.webp",
     "details": `APARTMENT FOR RENT
 Lomas del Mar Playas de Tijuana
 
@@ -99,7 +99,7 @@ PRICE: $14,000 MXN/month`
     "address": "556 Fundadores Blvd, El Rubí",
     "description": "Condo with 24/7 security, gym, and event room.",
     "price": "$13,200 MXN/month",
-    "url": "prove24.webp",
+    "url": "gye5.webp",
     "details": `CONDO FOR RENT
 Pacific Towers El Rubí
 
@@ -123,7 +123,7 @@ PRICE: $13,200 MXN/month`
     "address": "89 Fresno St, Otay Universidad",
     "description": "Three-bedroom apartment perfect for large families.",
     "price": "$15,500 MXN/month",
-    "url": "prove9.webp",
+    "url": "gye6.webp",
     "details": `APARTMENT FOR RENT
 Monteverde Otay Universidad
 
@@ -147,7 +147,7 @@ PRICE: $15,500 MXN/month`
     "address": "301 Las Américas Ave, Libertad Neighborhood",
     "description": "Semi-furnished apartment with great natural lighting.",
     "price": "$9,500 MXN/month",
-    "url": "prove10.webp",
+    "url": "gye7.webp",
     "details": `APARTMENT FOR RENT
 Casa Real Libertad Neighborhood
 
@@ -170,7 +170,7 @@ PRICE: $9,500 MXN/month`
     "address": "675 Centenario Blvd, Zona Río",
     "description": "Luxury apartment with modern finishes and private elevator.",
     "price": "$16,800 MXN/month",
-    "url": "prove11.webp",
+    "url": "gye8.webp",
     "details": `LUXURY APARTMENT FOR RENT
 Río Terraces Zona Río
 
@@ -193,7 +193,7 @@ PRICE: $16,800 MXN/month`
     "address": "77 Laurel St, Chapultepec Neighborhood",
     "description": "Located in front of a park, with green areas and playground.",
     "price": "$11,300 MXN/month",
-    "url": "prove12.webp",
+    "url": "gye9.webp",
     "details": `APARTMENT FOR RENT
 Insurgentes Chapultepec Neighborhood
 
@@ -216,7 +216,7 @@ PRICE: $11,300 MXN/month`
     "address": "1450 Cuauhtémoc Sur Blvd, La Cacho",
     "description": "Panoramic view of the city, ideal for executives.",
     "price": "$13,900 MXN/month",
-    "url": "prove13.webp",
+    "url": "gye10.webp",
     "details": `EXECUTIVE APARTMENT FOR RENT
 Panorama Residences La Cacho
 
@@ -239,7 +239,7 @@ PRICE: $13,900 MXN/month`
     "address": "312 Pacific Ave, Playas de Tijuana",
     "description": "Just steps from the beach, includes private terrace.",
     "price": "$15,000 MXN/month",
-    "url": "prove14.webp",
+    "url": "gye11.webp",
     "details": `BEACH APARTMENT FOR RENT
 Costa Bella Playas de Tijuana
 
@@ -262,7 +262,7 @@ PRICE: $15,000 MXN/month`
     "address": "202 Olivo St, Natura",
     "description": "New eco-friendly development with solar panels and gardens.",
     "price": "$10,200 MXN/month",
-    "url": "prove15.webp",
+    "url": "gye12.webp",
     "details": `ECO-FRIENDLY APARTMENT FOR RENT
 Urban Nature Natura
 
@@ -285,7 +285,7 @@ PRICE: $10,200 MXN/month`
     "address": "55 Dorado St, Buenos Aires Neighborhood",
     "description": "Quiet condo with security and controlled access.",
     "price": "$9,800 MXN/month",
-    "url": "prove16.webp",
+    "url": "gye13.webp",
     "details": `CONDO FOR RENT
 Golden View Buenos Aires Neighborhood
 
@@ -308,7 +308,7 @@ PRICE: $9,800 MXN/month`
     "address": "999 Paseo de los Héroes Ave, Zona Río",
     "description": "High-floor apartment with border view.",
     "price": "$14,700 MXN/month",
-    "url": "prove17.webp",
+    "url": "gye14.webp",
     "details": `HIGH-RISE APARTMENT FOR RENT
 High Summit Zona Río
 
@@ -331,7 +331,7 @@ PRICE: $14,700 MXN/month`
     "address": "88 Las Palmas Ave, La Mesa",
     "description": "Lovely family-friendly apartment with backyard.",
     "price": "$11,700 MXN/month",
-    "url": "prove18.webp",
+    "url": "gye15.webp",
     "details": `FAMILY APARTMENT FOR RENT
 Royal Palms La Mesa
 
@@ -354,7 +354,7 @@ PRICE: $11,700 MXN/month`
     "address": "90 Las Palmas Ave, Insurgentes",
     "description": "Quit Apartment, ideal for executives.",
     "price": "$9,500 MXN/month",
-    "url": "prove19.webp",
+    "url": "gye16.webp",
     "details": `EXECUTIVE APARTMENT FOR RENT
 The Florido Insurgentes
 
