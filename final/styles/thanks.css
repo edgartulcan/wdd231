@@ -1,3 +1,7 @@
+* {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 #results {
     background-color: rgb(240, 203, 182);
     padding: 0 1rem;
